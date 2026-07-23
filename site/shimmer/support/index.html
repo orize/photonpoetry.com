@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — Shimmer</title>
+    <meta
+      name="description"
+      content="Get help with Shimmer — how to report issues and contact support."
+    />
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand-link" href="/">
+          <img
+            class="brand-link__mark"
+            src="../../assets/favicon.svg"
+            width="28"
+            height="28"
+            alt=""
+          />
+          <span class="brand-link__text">Photon Poetry</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/shimmer/">Shimmer</a>
+          <a href="/shimmer/privacy/">Privacy</a>
+          <a href="/shimmer/support/" aria-current="page">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page prose">
+      <h1>Support</h1>
+      <p>
+        Need help with Shimmer? Email
+        <a href="mailto:support@photonpoetry.com">support@photonpoetry.com</a>.
+      </p>
+      <p class="meta">
+        Once the app is listed on the App Store, this page will serve as the
+        official support URL for the listing.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <dt>Which devices are supported?</dt>
+        <dd>
+          Shimmer is built for iPhone first, with iPad and Mac support planned
+          alongside the iOS release. Check the App Store listing for the current
+          minimum iOS version when it becomes available.
+        </dd>
+
+        <dt>Where are my scenes stored?</dt>
+        <dd>
+          Scenes and photo libraries are saved on your device. Optional iCloud
+          sync may be offered in a future update; see Shimmer’s
+          <a href="/shimmer/privacy/">privacy policy</a> for details.
+        </dd>
+
+        <dt>How do I report a bug?</dt>
+        <dd>
+          Email
+          <a href="mailto:support@photonpoetry.com">support@photonpoetry.com</a>
+          with a short description, your device model, and iOS version. Screenshots
+          or screen recordings make the issue easier to reproduce.
+        </dd>
+      </dl>
+
+      <p><a href="/shimmer/">← Back to Shimmer</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span id="year"></span> Photon Poetry</p>
+        <nav aria-label="Footer">
+          <a href="/shimmer/privacy/">Privacy</a>
+          <a href="/shimmer/support/">Support</a>
+          <a href="mailto:hello@photonpoetry.com">hello@photonpoetry.com</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

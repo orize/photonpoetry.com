@@ -1,77 +1,54 @@
-# Luminous brochure site
+# Photon Poetry website
 
-Static marketing pages for [photonpoetry.com](https://photonpoetry.com). No build step.
+Static studio site for [photonpoetry.com](https://photonpoetry.com). No build step.
 
-Published from this repository. In the [photonectar](https://github.com/orize/photonectar) app repo, this folder is a **git submodule** at `website/`.
+**Local checkout:** this repository lives at `~/dev/PhotonPoetry` (not inside the Luminous / Photonectar app repo).
+
+## Layout
+
+| Path | Purpose |
+|------|---------|
+| `site/` | **Published** site — Cloudflare Pages root directory |
+| `Branding/` | Affinity sources and brand exports — committed to GitHub, **not** deployed |
+| `.cursor/` | Project rules and skills for agents |
 
 ## Pages
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Landing page with hero and App Store placeholder |
-| `privacy.html` | Privacy policy stub (review before App Store submission) |
-| `support.html` | Support contact and FAQ (App Store support URL) |
+| URL | Purpose |
+|-----|---------|
+| `/` | Studio home — Photon Poetry + product catalog |
+| `/luminous/` | Luminous marketing |
+| `/luminous/privacy/` | Luminous privacy (App Store) |
+| `/luminous/support/` | Luminous support (App Store) |
+| `/shimmer/` … | Shimmer marketing / privacy / support |
+| `/best-units/` … | Best Units marketing / privacy / support |
 
-## Deploy to Cloudflare Pages (Git)
-
-1. Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-2. Select **`orize/photonpoetry.com`** and authorise GitHub if prompted.
-3. Configure the build:
-   - **Production branch:** `main`
-   - **Framework preset:** None
-   - **Build command:** *(leave empty)*
-   - **Root directory:** *(leave empty — files are at repo root)*
-   - **Build output directory:** `/`
-4. Deploy and open the `*.pages.dev` preview URL. Confirm `/`, `/privacy.html`, and `/support.html`.
-5. **Custom domains:** add `photonpoetry.com` and `www.photonpoetry.com` under the Pages project → **Custom domains**.
-
-Each push to `main` triggers a new deploy.
-
-DNS and nameserver changes at your registrar remain manual.
-
-## Deploy fallback (Direct Upload)
-
-1. **Workers & Pages** → **Upload assets**.
-2. Upload **all files from this repo root** (`index.html`, `privacy.html`, `support.html`, `assets/`).
-3. Add custom domains as above.
-
-## Submodule workflow (photonectar developers)
-
-Edit files here in Cursor under `Photonectar/website/`, then:
-
-```bash
-cd website
-git add .
-git commit -m "Update site copy"
-git push
-```
-
-In the photonectar repo root, commit the updated submodule pointer when you want `main` to reference the new site revision:
-
-```bash
-git add website
-git commit -m "Bump website submodule"
-git push
-```
-
-Fresh clone of photonectar:
-
-```bash
-git clone --recurse-submodules https://github.com/orize/photonectar.git
-```
-
-## App Store link
-
-When the App Store listing exists, edit `index.html`:
-
-1. Uncomment the real App Store `<a>` in the CTA block.
-2. Remove or hide the disabled “Coming soon” button.
-3. Set the `href` to your official App Store URL — do not guess the ID.
+Legacy `/privacy` and `/support` redirect to Luminous (see `site/_redirects`).
 
 ## Local preview
 
 ```bash
+cd site
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080/` and verify links, mailto addresses, and the favicon.
+Open `http://127.0.0.1:8080/`.
+
+## Deploy to Cloudflare Pages
+
+1. Cloudflare Dashboard → **Workers & Pages** → project for `orize/photonpoetry.com`.
+2. Build settings:
+   - **Production branch:** `main`
+   - **Framework preset:** None
+   - **Build command:** *(empty)*
+   - **Root directory:** `site` ← **required** after this layout change
+   - **Build output directory:** `/` (or leave default for static)
+3. Production deploys from pushes to `main`. **Do not merge to `main` without review.**
+
+DNS and custom domains (`photonpoetry.com`, `www`) stay as configured.
+
+## App Store URL trios
+
+- Luminous: `https://photonpoetry.com/luminous/`, `…/luminous/privacy/`, `…/luminous/support/`
+- Shimmer: `https://photonpoetry.com/shimmer/`, …
+- Best Units: `https://photonpoetry.com/best-units/`, …

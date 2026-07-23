@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy — Best Units</title>
+    <meta
+      name="description"
+      content="Privacy policy for Best Units."
+    />
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand-link" href="/">
+          <img
+            class="brand-link__mark"
+            src="../../assets/favicon.svg"
+            width="28"
+            height="28"
+            alt=""
+          />
+          <span class="brand-link__text">Photon Poetry</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/best-units/">Best Units</a>
+          <a href="/best-units/privacy/" aria-current="page">Privacy</a>
+          <a href="/best-units/support/">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page prose">
+      <h1>Privacy policy</h1>
+      <p class="meta">Last updated: 27 June 2025</p>
+
+      <p>
+        This page describes how <strong>Best Units</strong> handles your
+        information. It is a plain-language summary intended as a placeholder
+        before formal legal review.
+      </p>
+
+      <h2>What the app does</h2>
+      <p>
+        Best Units lets you build animated lighting scenes from photos. Sprites
+        move across an image and sample nearby colours to drive an in-app
+        lighting preview. Optional integrations with smart-home platforms may be
+        offered in future releases.
+      </p>
+
+      <h2>Data on your device</h2>
+      <p>
+        Your photos, scenes, and library content are stored locally on your
+        iPhone, iPad, or Mac. Best Units does not upload your photo library to
+        servers for processing or storage.
+      </p>
+
+      <h2>Optional iCloud sync</h2>
+      <p>
+        When iCloud sync is enabled in a future release, scene and library data
+        may sync through your personal iCloud account using Apple’s CloudKit
+        service. That data remains under your Apple ID and is subject to
+        Apple’s privacy terms. Best Units does not operate separate cloud
+        storage for your scenes today.
+      </p>
+
+      <h2>Third-party services</h2>
+      <p>
+        If you choose to connect smart-home integrations (such as Home
+        Assistant or Philips Hue), credentials and commands are exchanged
+        directly between the app and those services according to their own
+        policies. Best Units does not sell your personal data.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about privacy? Email
+        <a href="mailto:hello@photonpoetry.com">hello@photonpoetry.com</a>.
+      </p>
+
+      <p><a href="/best-units/">← Back to Best Units</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span id="year"></span> Photon Poetry</p>
+        <nav aria-label="Footer">
+          <a href="/best-units/privacy/">Privacy</a>
+          <a href="/best-units/support/">Support</a>
+          <a href="mailto:hello@photonpoetry.com">hello@photonpoetry.com</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+description: Photon Poetry brand — studio and product name locks; brand is provisional
+alwaysApply: true
+---
+
+# Brand
+
+- Studio name: **Photon Poetry** (not Photonectar on public pages).
+- Products only: **Luminous**, **Shimmer**, **Best Units**. Do not invent additional products.
+- Brand is **fresh and unformed** — keep visuals and voice provisional; do not invent a heavy identity system, fake history, or overconfident taglines.
+- Logo sources live in `Branding/` (Affinity). Web assets are exported under `site/assets/` (`logo.svg`, `favicon.svg`). Never serve or link `.af` files from the site.
+- Accent from the mark: `#ffa400` / orange. Avoid generic AI landing tropes (purple gradients, cream+serif+terracotta clusters, glow-heavy dark UI).
+- Shared contacts for now: `hello@photonpoetry.com`, `support@photonpoetry.com`.

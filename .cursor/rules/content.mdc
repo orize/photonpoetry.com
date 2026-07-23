@@ -1,0 +1,12 @@
+---
+description: Copy rules for studio vs product pages and privacy/support stubs
+alwaysApply: true
+---
+
+# Content
+
+- Studio home: brand first, one short supporting line, catalog of three products — no fake stats or ship dates.
+- In-development products: honest “in development” / “coming soon” language only.
+- Privacy and support are **per product**. New product stubs may start as Luminous copy with the product name swapped; refine when product-specific facts exist.
+- Legal tone for privacy/support; label placeholder policies as needing formal review when relevant.
+- Do not invent App Store links, ratings, or availability.

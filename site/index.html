@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photon Poetry</title>
+    <meta
+      name="description"
+      content="Photon Poetry makes indie software — Luminous, Shimmer, and Best Units."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand-link" href="/" aria-current="page">
+          <img
+            class="brand-link__mark"
+            src="assets/favicon.svg"
+            width="28"
+            height="28"
+            alt=""
+          />
+          <span class="brand-link__text">Photon Poetry</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/luminous/">Luminous</a>
+          <a href="/shimmer/">Shimmer</a>
+          <a href="/best-units/">Best Units</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page page--wide">
+      <section class="studio-hero">
+        <div class="studio-hero__brand">
+          <div class="studio-hero__logo-frame">
+            <img
+              class="studio-hero__logo"
+              src="assets/logo.svg"
+              width="424"
+              height="420"
+              alt="Photon Poetry"
+            />
+          </div>
+          <h1>Photon Poetry</h1>
+        </div>
+        <p class="studio-hero__lede">
+          Small indie software, still taking shape. Three products in
+          development.
+        </p>
+      </section>
+
+      <ul class="product-catalog">
+        <li>
+          <a class="product-card" href="/luminous/">
+            <h2 class="product-card__name">Luminous</h2>
+            <span class="product-card__status">In development</span>
+            <p class="product-card__blurb">
+              Turn photos into animated lighting scenes with in-app preview.
+            </p>
+          </a>
+        </li>
+        <li>
+          <a class="product-card" href="/shimmer/">
+            <h2 class="product-card__name">Shimmer</h2>
+            <span class="product-card__status">In development</span>
+            <p class="product-card__blurb">
+              An iOS app from Photon Poetry — details coming as it takes form.
+            </p>
+          </a>
+        </li>
+        <li>
+          <a class="product-card" href="/best-units/">
+            <h2 class="product-card__name">Best Units</h2>
+            <span class="product-card__status">In development</span>
+            <p class="product-card__blurb">
+              Convert measurements where you work — more soon.
+            </p>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span id="year"></span> Photon Poetry</p>
+        <nav aria-label="Footer">
+          <a href="mailto:hello@photonpoetry.com">hello@photonpoetry.com</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

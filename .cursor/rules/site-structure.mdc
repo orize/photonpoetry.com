@@ -1,0 +1,16 @@
+---
+description: Site layout, Cloudflare deploy root, App Store URL trios, no main without approval
+alwaysApply: true
+---
+
+# Site structure
+
+- Published files live under **`site/`** only. `Branding/` is git-tracked but **not** deployed.
+- Cloudflare Pages **Root directory** must be `site` (not repo root).
+- URL map:
+  - `/` — studio home
+  - `/{luminous|shimmer|best-units}/` — product marketing
+  - `/{product}/privacy/` and `/{product}/support/` — per-product App Store pages
+- Legacy `/privacy` and `/support` redirect to Luminous via `site/_redirects`.
+- Preview: `cd site && python3 -m http.server 8080`
+- Remote: `orize/photonpoetry.com`. **Do not push or merge to `main` without explicit user approval.** Prefer feature branches and PRs.
