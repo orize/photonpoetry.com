@@ -35,8 +35,9 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Surface:** shared CSS (all `--font-display` headings)
 - **Question:** Replace the current display face (Syne) with Montserrat Light on headings?
 - **Current:** `--font-display: "Syne", …` (700 weight)
-- **Suggestion:** Ready after body-font pick; Montserrat Light is quieter/more neutral than Syne.
-- **Status:** queued
+- **Suggestion:** B Montserrat Light — quieter beside the accent “Make beautiful” tagline; C if Light feels too thin at large sizes.
+- **Status:** in-experiment
+- **Experiment:** E-003
 
 ---
 
@@ -44,7 +45,15 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-003 — Display font variants
+
+- **Question:** Q-002
+- **Branch:** brand/display-montserrat
+- **PR:** (pending)
+- **Options:** A Syne 700 (control) / B Montserrat Light 300 / C Montserrat Regular 400
+- **Recommendation:** B — matches the ask; quieter than Syne without losing sans clarity
+- **Status:** awaiting-you
+- **Preview:** local `http://127.0.0.1:8080/?v=b` (also `?v=a`, `?v=c`); on-page switcher
 
 ### Template
 

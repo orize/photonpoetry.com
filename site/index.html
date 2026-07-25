@@ -54,6 +54,12 @@
           tools are designed to delight and make it easy for you to make
           beauty in your space.
         </p>
+        <p class="experiment-switcher" id="display-font-switcher" hidden>
+          Headings:
+          <a href="?v=a">A Syne</a>
+          <a href="?v=b">B Montserrat Light</a>
+          <a href="?v=c">C Montserrat Regular</a>
+        </p>
       </section>
 
       <ul class="product-catalog">
@@ -98,6 +104,27 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Brand experiment E-003 (Q-002): display font via ?v=a|b|c
+      (function () {
+        var fonts = {
+          a: "syne",
+          b: "montserrat-light",
+          c: "montserrat-regular"
+        };
+        var params = new URLSearchParams(window.location.search);
+        var v = (params.get("v") || "b").toLowerCase();
+        if (!fonts[v]) v = "b";
+        document.documentElement.setAttribute("data-display-font", fonts[v]);
+        var switcher = document.getElementById("display-font-switcher");
+        if (switcher) {
+          switcher.hidden = false;
+          switcher.querySelectorAll("a").forEach(function (link) {
+            var key = (link.getAttribute("href") || "").replace("?v=", "");
+            if (key === v) link.setAttribute("aria-current", "true");
+          });
+        }
+      })();
     </script>
   </body>
 </html>
