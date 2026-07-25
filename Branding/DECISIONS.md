@@ -66,7 +66,7 @@ Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3
 - **Surface:** studio home
 - **Date:** 2026-07-25
 - **Iterations:** 1
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/5
 
 ### P-007 — Unlink product pages from home (temporary)
 
@@ -76,7 +76,7 @@ Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3
 - **Surface:** studio home
 - **Date:** 2026-07-25
 - **Iterations:** 1
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/5
 - **Note:** Temporary — relink when product pages have real marketing content.
 
 ### P-006 — Shimmer home catalog blurb
@@ -87,7 +87,7 @@ Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3
 - **Surface:** studio home
 - **Date:** 2026-07-25
 - **Iterations:** 1
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/5
 
 ### P-005 — Luminous home catalog blurb
 
@@ -97,7 +97,7 @@ Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3
 - **Surface:** studio home
 - **Date:** 2026-07-25
 - **Iterations:** 1
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/5
 
 ### P-004 — Display face: Montserrat Light
 
