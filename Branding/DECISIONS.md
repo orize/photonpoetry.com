@@ -49,7 +49,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-002
 - **Branch:** brand/display-montserrat
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/4
 - **Options:** A Syne 700 (control) / B Montserrat Light 300 / C Montserrat Regular 400
 - **Recommendation:** B — matches the ask; quieter than Syne without losing sans clarity
 - **Status:** awaiting-you
