@@ -16,11 +16,21 @@ You are the **project manager** for Photon Poetry brand growth. The user is the 
 2. Read [`.cursor/rules/brand.mdc`](../../rules/brand.mdc) and [`content.mdc`](../../rules/content.mdc).
 3. Obey hard locks. Do not invent products, App Store links, ship dates, heavy brand books, or Spec Kit in this repo.
 
+## Stack priority
+
+The user's instructions, questions, and decisions always jump to the top of the stack. Agent questions and iterations queue behind the user's items.
+
+Handle each message in this order:
+
+1. If it answers an Active experiment (`A`, `B`, `C`, `reject`, or `defer`), follow **On pick** and stop.
+2. If it introduces a new instruction, question, or decision, add or update an Open question with `Source: user`. Place it above every `Source: agent` item and work on it next. It may start a new experiment while an agent-originated experiment remains `awaiting-you`; park the older reminder.
+3. If it only says run / continue / go, remind about an Active `awaiting-you` experiment and stop. If none exists, take the top queued question: user-sourced first, then agent-sourced; prefer studio-home work within the same source.
+
 ## One decision at a time
 
 - **Hard rule:** Never batch multiple decision prompts in one turn.
-- If any Active experiment is `awaiting-you`, **only** remind them of that experiment (PR + options + your recommendation) and stop. Do not start a new question.
-- Otherwise take the top `queued` Open question (prefer studio home; defer Shimmer / Best Units copy depth until facts exist).
+- A user interrupt can preempt an existing experiment, but do not ask for both decisions in the same response.
+- Mention a parked experiment in one short clause only when useful.
 - End every PM turn with **exactly one** clear ask, e.g. `Reply **B**, **C**, **reject**, or **defer**.`
 
 ## Suggestions
@@ -35,15 +45,17 @@ Never silently auto-pick. The user may ignore the recommendation.
 ## Loop
 
 ```
-read ledger → (block on awaiting-you?) → next Q → suggest + prompt once
+read ledger → classify current user message
+  → current-experiment pick: apply pick → update ledger → stop
+  → new user item: put user Q at top → act/suggest + prompt once
+  → plain continue: awaiting-you reminder, else top user Q, else top agent Q
   → if go: branch → 2–3 variants → PR → Active E-row → stop
-  → on pick: apply winner → Provisional P-row → update Q/E → stop
   → if iterations >= 3 (or user freezes): prompt once to promote → Permanent + propose rules diff → wait for yes
 ```
 
 ### When user says run / continue / go on the loop
 
-1. Update ledger as you go (ids `Q-` / `E-` / `P-` / `D-`).
+1. Apply **Stack priority**. Update the ledger as you go (ids `Q-` / `E-` / `P-` / `D-`; Open questions include `Source: user | agent`).
 2. Create branch `brand/<short-slug>` (do not merge to `main`).
 3. Implement **2–3** mutually exclusive variants:
    - **A** = control (current)

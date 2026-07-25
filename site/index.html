@@ -6,7 +6,7 @@
     <title>Photon Poetry</title>
     <meta
       name="description"
-      content="Photon Poetry makes indie software — Luminous, Shimmer, and Best Units."
+      content="Photon Poetry — well-considered software to help you make beautiful things."
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/style.css" />
@@ -46,15 +46,13 @@
           </div>
           <h1>Photon Poetry</h1>
         </div>
-        <p class="studio-hero__lede" id="studio-lede">
-          Small indie software, still taking shape. Three products in
-          development.
-        </p>
-        <p class="experiment-switcher" id="lede-switcher" hidden>
-          Lede experiment:
-          <a href="?v=a">A</a>
-          <a href="?v=b">B</a>
-          <a href="?v=c">C</a>
+        <p class="studio-hero__tagline">Make beautiful.</p>
+        <p class="studio-hero__lede">
+          We create well-considered software to help you make beautiful
+          things, in the belief that light, motion and interaction deserve
+          the same care as words on a page or notes in a piece of music. Our
+          tools are designed to delight and make it easy for you to make
+          beauty in your space.
         </p>
       </section>
 
@@ -100,28 +98,6 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Brand experiment E-001 (Q-001): studio lede variants via ?v=a|b|c
-      (function () {
-        var ledes = {
-          a: "Small indie software, still taking shape. Three products in development.",
-          b: "Small indie software, still taking shape.",
-          c: "A small studio. Three products, still unfinished."
-        };
-        var params = new URLSearchParams(window.location.search);
-        var v = (params.get("v") || "a").toLowerCase();
-        if (!ledes[v]) v = "a";
-        var el = document.getElementById("studio-lede");
-        if (el) el.textContent = ledes[v];
-        var switcher = document.getElementById("lede-switcher");
-        if (switcher) {
-          switcher.hidden = false;
-          switcher.querySelectorAll("a").forEach(function (link) {
-            var key = link.getAttribute("href").replace("?v=", "");
-            if (key === v) link.setAttribute("aria-current", "true");
-          });
-        }
-      })();
     </script>
   </body>
 </html>

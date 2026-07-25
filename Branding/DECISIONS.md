@@ -7,6 +7,7 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 ## How we work
 
 - **Roles:** Agent = project manager. You = decision maker only (A/B/C, reject, defer, promote?, merge?).
+- **Stack priority:** Your instructions, questions, and decisions jump to the top. Agent-queued questions and iterations wait behind your items.
 - **One decision per turn:** Never batch prompts. Finish or park the current item before starting the next.
 - **Suggestions:** Every prompt includes the agent’s recommended option and one-line why. You may ignore it.
 - **Experiments:** Feature branch `brand/<slug>` + PR with 2–3 variants; preview URLs; no merge to `main` without explicit approval.
@@ -26,16 +27,16 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 ## Open questions
 
-Queued taste forks. Status: `queued` | `in-experiment` | `deferred`.
+Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-001 — Studio lede: keep vs sharpen
+### Q-002 — Heading typeface: Syne vs Montserrat Light
 
-- **Surface:** studio home
-- **Question:** Keep the current provisional lede, or sharpen to one clearer supporting line without inventing a tagline or roadmap?
-- **Current copy:** “Small indie software, still taking shape. Three products in development.”
-- **Suggestion:** A (control) — brand is still unformed; shortening can wait until the quiet mark (P-001) has lived longer.
-- **Status:** in-experiment
-- **Experiment:** E-001
+- **Source:** user
+- **Surface:** shared CSS (all `--font-display` headings)
+- **Question:** Replace the current display face (Syne) with Montserrat Light on headings?
+- **Current:** `--font-display: "Syne", …` (700 weight)
+- **Suggestion:** Run this next; Montserrat Light is quieter and more neutral than Syne.
+- **Status:** queued
 
 ---
 
@@ -43,15 +44,7 @@ Queued taste forks. Status: `queued` | `in-experiment` | `deferred`.
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-001 — Studio lede variants
-
-- **Question:** Q-001
-- **Branch:** brand/studio-lede
-- **PR:** https://github.com/orize/photonpoetry.com/pull/3
-- **Options:** A control (current two-sentence lede) / B shorter single sentence / C studio-framed unfinished products
-- **Recommendation:** A — keep provisional honesty; catalog already names the three products
-- **Status:** awaiting-you
-- **Preview:** local `http://127.0.0.1:8080/` (`?v=a` / `?v=b` / `?v=c`); on-page A/B/C switcher
+_(None.)_
 
 ### Template
 
@@ -71,6 +64,17 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-002 — Studio voice: Make beautiful.
+
+- **Decision:** Studio hero uses tagline “Make beautiful.” plus a longer care/craft paragraph (user-authored); not the short provisional A/B/C ledes.
+- **Why:** User pick on E-001 / Q-001 — brand statement over short “still taking shape” copy.
+- **Tried / rejected:** A control two-sentence lede; B shorter single sentence; C studio-framed unfinished products.
+- **Surface:** studio home
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/3
+- **Note:** Fixed typo “aesy” → “easy” when applying. Longer than the old “one short supporting line” content rule — revisit that rule if this survives.
 
 ### P-001 — Quiet mark stage, no pulsing glow
 
@@ -133,6 +137,7 @@ Survived the promotion gate and/or already locked in `.cursor/rules`.
 ```markdown
 ### Q-NNN — short title
 
+- **Source:** user | agent
 - **Surface:** studio home / Luminous / …
 - **Question:** One sentence.
 - **Suggestion:** Optional agent lean.
