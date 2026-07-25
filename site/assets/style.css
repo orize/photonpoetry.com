@@ -1,6 +1,6 @@
 /* Photon Poetry studio site — provisional brand */
 
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Montserrat:wght@300;400;600;700&display=swap");
 
 :root {
   color-scheme: light dark;
@@ -15,7 +15,8 @@
   --focus: #c97800;
   --max-width: 42rem;
   --max-width-wide: 56rem;
-  --font-display: "Syne", "Avenir Next Condensed", "Trebuchet MS", sans-serif;
+  --font-display: "Montserrat", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display-weight: 300;
   --font-body: "Figtree", "Avenir Next", "Segoe UI", sans-serif;
   font-family: var(--font-body);
   line-height: 1.6;
@@ -115,7 +116,7 @@ button:focus-visible {
   gap: 0.65rem;
   color: var(--text);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: var(--font-display-weight);
   letter-spacing: -0.02em;
 }
 
@@ -132,7 +133,7 @@ button:focus-visible {
 .brand-link__text {
   font-family: var(--font-display);
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: var(--font-display-weight);
 }
 
 .site-nav {
@@ -189,7 +190,7 @@ button:focus-visible {
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 8vw, 3.75rem);
-  font-weight: 700;
+  font-weight: var(--font-display-weight);
   line-height: 0.98;
   letter-spacing: -0.04em;
 }
@@ -198,7 +199,7 @@ button:focus-visible {
   margin: 0.75rem 0 0;
   font-family: var(--font-display);
   font-size: clamp(2rem, 6.5vw, 2.85rem);
-  font-weight: 700;
+  font-weight: var(--font-display-weight);
   letter-spacing: -0.03em;
   line-height: 1.1;
   color: var(--accent);
@@ -242,7 +243,7 @@ button:focus-visible {
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--font-display-weight);
   letter-spacing: -0.03em;
   color: var(--text);
 }
@@ -271,6 +272,7 @@ button:focus-visible {
   margin: 0 0 0.75rem;
   font-family: var(--font-display);
   font-size: clamp(2rem, 6vw, 2.75rem);
+  font-weight: var(--font-display-weight);
   line-height: 1.1;
   letter-spacing: -0.03em;
 }
@@ -320,6 +322,7 @@ button:focus-visible {
 .prose h1,
 .prose h2 {
   font-family: var(--font-display);
+  font-weight: var(--font-display-weight);
   line-height: 1.25;
   letter-spacing: -0.02em;
 }

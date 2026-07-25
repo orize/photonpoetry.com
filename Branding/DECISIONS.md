@@ -29,14 +29,7 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-002 — Heading typeface: Syne vs Montserrat Light
-
-- **Source:** user
-- **Surface:** shared CSS (all `--font-display` headings)
-- **Question:** Replace the current display face (Syne) with Montserrat Light on headings?
-- **Current:** `--font-display: "Syne", …` (700 weight)
-- **Suggestion:** Ready after body-font pick; Montserrat Light is quieter/more neutral than Syne.
-- **Status:** queued
+_(None.)_
 
 ---
 
@@ -64,6 +57,16 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-004 — Display face: Montserrat Light
+
+- **Decision:** Headings use Montserrat Light (`--font-display` / weight 300); Syne retired.
+- **Why:** User pick B on E-003 / Q-002 — quieter beside accent “Make beautiful.”
+- **Tried / rejected:** A Syne 700 (control); C Montserrat Regular 400.
+- **Surface:** shared CSS
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/4
 
 ### P-003 — Body face: Figtree
 
