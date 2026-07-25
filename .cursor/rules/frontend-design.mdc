@@ -10,5 +10,5 @@ alwaysApply: false
 - Prefer real product imagery when available; avoid abstract decoration as the main idea.
 - No cards in the hero; product catalog links may be list/rail treatments without heavy card chrome.
 - Expressive fonts already in `site/assets/style.css` (Syne + Manrope); extend those tokens rather than adding Inter/Roboto/system stacks.
-- Keep motion purposeful (existing rise/glow); respect `prefers-reduced-motion`.
+- Keep motion purposeful (existing rise entrance); respect `prefers-reduced-motion`.
 - Mobile and desktop both must work; keep the shared CSS mobile-first.

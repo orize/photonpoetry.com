@@ -1,0 +1,167 @@
+# Brand ledger
+
+Source of truth for Photon Poetry and product brand growth. Not deployed (lives under `Branding/`).
+
+**You** decide. The **PM agent** (`brand-iterate` skill) owns this ledger, runs experiments, and prompts **one decision at a time**.
+
+## How we work
+
+- **Roles:** Agent = project manager. You = decision maker only (A/B/C, reject, defer, promote?, merge?).
+- **One decision per turn:** Never batch prompts. Finish or park the current item before starting the next.
+- **Suggestions:** Every prompt includes the agent’s recommended option and one-line why. You may ignore it.
+- **Experiments:** Feature branch `brand/<slug>` + PR with 2–3 variants; preview URLs; no merge to `main` without explicit approval.
+- **Promote to rules:** After a provisional decision survives **2–3** iterations (or you say freeze earlier), agent asks once to promote → Permanent + propose `.cursor/rules` diff; wait for yes.
+- **Spec Kit:** Not used in this marketing repo. Init in product *app* repos when feature behavior needs clarify gates.
+
+### IDs
+
+| Prefix | Meaning |
+|--------|---------|
+| `Q-NNN` | Open question |
+| `E-NNN` | Active experiment |
+| `P-NNN` | Provisional decision |
+| `D-NNN` | Permanent decision |
+
+---
+
+## Open questions
+
+Queued taste forks. Status: `queued` | `in-experiment` | `deferred`.
+
+### Q-001 — Studio lede: keep vs sharpen
+
+- **Surface:** studio home
+- **Question:** Keep the current provisional lede, or sharpen to one clearer supporting line without inventing a tagline or roadmap?
+- **Current copy:** “Small indie software, still taking shape. Three products in development.”
+- **Suggestion:** A (control) — brand is still unformed; shortening can wait until the quiet mark (P-001) has lived longer.
+- **Status:** in-experiment
+- **Experiment:** E-001
+
+---
+
+## Active experiments
+
+In-flight PR work. Status: `awaiting-you` | `applying`.
+
+### E-001 — Studio lede variants
+
+- **Question:** Q-001
+- **Branch:** brand/studio-lede
+- **PR:** (pending push)
+- **Options:** A control (current two-sentence lede) / B shorter single sentence / C studio-framed unfinished products
+- **Recommendation:** A — keep provisional honesty; catalog already names the three products
+- **Status:** awaiting-you
+- **Preview:** local `http://127.0.0.1:8080/` (`?v=a` / `?v=b` / `?v=c`); on-page A/B/C switcher
+
+### Template
+
+```markdown
+### E-NNN — short title
+
+- **Question:** Q-NNN
+- **Branch:** brand/<slug>
+- **PR:** <url>
+- **Options:** A control / B … / C …
+- **Recommendation:** <letter> — <one line>
+- **Status:** awaiting-you
+```
+
+---
+
+## Provisional decisions
+
+Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-001 — Quiet mark stage, no pulsing glow
+
+- **Decision:** Studio-home logo sits on a quiet dark panel; no looping orange glow (entrance rise motion stays).
+- **Why:** Glow-heavy AI-landing tropes; the pulse competed with the mark and felt too polished for a provisional studio.
+- **Tried / rejected:** Softening glow keyframes further.
+- **Surface:** studio home / shared CSS
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** none (shipped before PR-experiment process)
+
+---
+
+## Permanent decisions
+
+Survived the promotion gate and/or already locked in `.cursor/rules`.
+
+### D-001 — Middle way, not Spec Kit for brand
+
+- **Decision:** Grow studio and product brands via this ledger plus thin `site/` slices / PR experiments; do not bootstrap Spec Kit here for brand work.
+- **Why:** Spec Kit fits behavioral app features; brand learning is taste and small public experiments.
+- **Tried / rejected:** Full specify → clarify → plan → tasks for copy/visual tweaks.
+- **Surface:** process
+- **Date:** 2026-07-25
+- **Rules:** process (this file + `brand-iterate` skill)
+
+### D-002 — Promote rules only when stable
+
+- **Decision:** Cursor rules stay the living locks; new taste decisions stay Provisional until they survive 2–3 iterations (or you freeze earlier), then promote.
+- **Why:** Brand is fresh and unformed — freezing every experiment into always-on rules invents a heavy identity too early.
+- **Tried / rejected:** Promoting the first slice into `brand.mdc` immediately.
+- **Surface:** process
+- **Date:** 2026-07-25
+- **Rules:** process
+
+### D-003 — Spec Kit deferred to app repos
+
+- **Decision:** Defer Spec Kit to Luminous (or other product) app repositories when real feature behavior needs clarify gates; keep PhotonPoetry as static marketing + Affinity sources.
+- **Why:** This repo has no app code, contracts, or testable behavior.
+- **Tried / rejected:** `specify init` in PhotonPoetry.
+- **Surface:** process
+- **Date:** 2026-07-25
+- **Rules:** process
+
+### D-004 — Seeded hard locks
+
+- **Decision:** Studio name Photon Poetry; products Luminous, Shimmer, Best Units only; provisional tone; accent `#ffa400`; no fake stats, ship dates, or App Store inventiveness; per-product privacy/support.
+- **Why:** Already encoded in `.cursor/rules/brand.mdc` and `content.mdc`.
+- **Tried / rejected:** Inventing a brand book or overconfident taglines.
+- **Surface:** process / shared
+- **Date:** 2026-07-25
+- **Rules:** `.cursor/rules/brand.mdc`, `.cursor/rules/content.mdc`
+
+---
+
+## Section templates
+
+### Open question
+
+```markdown
+### Q-NNN — short title
+
+- **Surface:** studio home / Luminous / …
+- **Question:** One sentence.
+- **Suggestion:** Optional agent lean.
+- **Status:** queued
+```
+
+### Provisional
+
+```markdown
+### P-NNN — short title
+
+- **Decision:** One sentence.
+- **Why:** …
+- **Tried / rejected:** …
+- **Surface:** …
+- **Date:** YYYY-MM-DD
+- **Iterations:** N
+- **PR:** <url or none>
+```
+
+### Permanent
+
+```markdown
+### D-NNN — short title
+
+- **Decision:** One sentence.
+- **Why:** …
+- **Tried / rejected:** …
+- **Surface:** …
+- **Date:** YYYY-MM-DD
+- **Rules:** path or process
+```
