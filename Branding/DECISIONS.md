@@ -47,7 +47,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-001
 - **Branch:** brand/studio-lede
-- **PR:** (pending push)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/3
 - **Options:** A control (current two-sentence lede) / B shorter single sentence / C studio-framed unfinished products
 - **Recommendation:** A — keep provisional honesty; catalog already names the three products
 - **Status:** awaiting-you
