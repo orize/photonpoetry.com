@@ -46,13 +46,19 @@
           </div>
           <h1>Photon Poetry</h1>
         </div>
-        <p class="studio-hero__tagline">Make beautiful.</p>
+        <p class="studio-hero__tagline">Make beautiful</p>
         <p class="studio-hero__lede">
           We create well-considered software to help you make beautiful
           things, in the belief that light, motion and interaction deserve
           the same care as words on a page or notes in a piece of music. Our
           tools are designed to delight and make it easy for you to make
           beauty in your space.
+        </p>
+        <p class="experiment-switcher" id="body-font-switcher" hidden>
+          Body font:
+          <a href="?v=a">A Manrope</a>
+          <a href="?v=b">B Figtree</a>
+          <a href="?v=c">C Source Sans 3</a>
         </p>
       </section>
 
@@ -98,6 +104,23 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Brand experiment E-002 (Q-003): body font via ?v=a|b|c
+      (function () {
+        var fonts = { a: "manrope", b: "figtree", c: "source-sans" };
+        var params = new URLSearchParams(window.location.search);
+        var v = (params.get("v") || "b").toLowerCase();
+        if (!fonts[v]) v = "b";
+        document.documentElement.setAttribute("data-body-font", fonts[v]);
+        var switcher = document.getElementById("body-font-switcher");
+        if (switcher) {
+          switcher.hidden = false;
+          switcher.querySelectorAll("a").forEach(function (link) {
+            var key = (link.getAttribute("href") || "").replace("?v=", "");
+            if (key === v) link.setAttribute("aria-current", "true");
+          });
+        }
+      })();
     </script>
   </body>
 </html>

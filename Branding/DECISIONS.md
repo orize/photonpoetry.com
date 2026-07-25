@@ -29,13 +29,22 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
+### Q-003 — Body typeface: replace Manrope
+
+- **Source:** user
+- **Surface:** shared CSS (`--font-body`)
+- **Question:** Which body face replaces Manrope?
+- **Suggestion:** B Figtree — warmer and less “product UI default” than Manrope, still readable at body sizes.
+- **Status:** in-experiment
+- **Experiment:** E-002
+
 ### Q-002 — Heading typeface: Syne vs Montserrat Light
 
 - **Source:** user
 - **Surface:** shared CSS (all `--font-display` headings)
 - **Question:** Replace the current display face (Syne) with Montserrat Light on headings?
 - **Current:** `--font-display: "Syne", …` (700 weight)
-- **Suggestion:** Run this next; Montserrat Light is quieter and more neutral than Syne.
+- **Suggestion:** Parked behind body-font experiment; revisit after E-002.
 - **Status:** queued
 
 ---
@@ -44,7 +53,15 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-002 — Body font variants
+
+- **Question:** Q-003
+- **Branch:** brand/studio-lede
+- **PR:** https://github.com/orize/photonpoetry.com/pull/3
+- **Options:** A Manrope (control) / B Figtree / C Source Sans 3
+- **Recommendation:** B — quieter warmth than Manrope without going geometric-startup
+- **Status:** awaiting-you
+- **Preview:** local `http://127.0.0.1:8080/?v=b` (also `?v=a`, `?v=c`); on-page switcher
 
 ### Template
 
@@ -65,11 +82,11 @@ _(None.)_
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
 
-### P-002 — Studio voice: Make beautiful.
+### P-002 — Studio voice: Make beautiful
 
-- **Decision:** Studio hero uses tagline “Make beautiful.” plus a longer care/craft paragraph (user-authored); not the short provisional A/B/C ledes.
-- **Why:** User pick on E-001 / Q-001 — brand statement over short “still taking shape” copy.
-- **Tried / rejected:** A control two-sentence lede; B shorter single sentence; C studio-framed unfinished products.
+- **Decision:** Studio hero uses accent-colored tagline “Make beautiful” (no full stop) plus a wider craft paragraph (user-authored).
+- **Why:** User pick on E-001 / Q-001, then layout tweaks (larger accent tagline; ~50% wider lede).
+- **Tried / rejected:** A control two-sentence lede; B shorter single sentence; C studio-framed unfinished products; period after tagline; narrow lede.
 - **Surface:** studio home
 - **Date:** 2026-07-25
 - **Iterations:** 1
