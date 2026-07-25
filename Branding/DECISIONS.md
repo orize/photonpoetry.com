@@ -10,7 +10,7 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 - **Stack priority:** Your instructions, questions, and decisions jump to the top. Agent-queued questions and iterations wait behind your items.
 - **One decision per turn:** Never batch prompts. Finish or park the current item before starting the next.
 - **Suggestions:** Every prompt includes the agent’s recommended option and one-line why. You may ignore it.
-- **Experiments:** Feature branch `brand/<slug>` + PR with 2–3 variants; preview URLs; no merge to `main` without explicit approval.
+- **Experiments:** Feature branch `brand-<slug>` (hyphens, no `/` — see [`branches.mdc`](../.cursor/rules/branches.mdc)) + PR with 2–3 variants; preview URLs; no merge to `main` without explicit approval.
 - **Promote to rules:** After a provisional decision survives **2–3** iterations (or you say freeze earlier), agent asks once to promote → Permanent + propose `.cursor/rules` diff; wait for yes.
 - **Spec Kit:** Not used in this marketing repo. Init in product *app* repos when feature behavior needs clarify gates.
 
@@ -45,7 +45,7 @@ _(None.)_
 ### E-NNN — short title
 
 - **Question:** Q-NNN
-- **Branch:** brand/<slug>
+- **Branch:** brand-<slug>
 - **PR:** <url>
 - **Options:** A control / B … / C …
 - **Recommendation:** <letter> — <one line>

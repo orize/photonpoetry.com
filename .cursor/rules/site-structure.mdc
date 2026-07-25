@@ -1,12 +1,12 @@
 ---
-description: Site layout, Cloudflare deploy root, App Store URL trios, no main without approval
+description: Site layout, Cloudflare Workers deploy, App Store URL trios, no main without approval
 alwaysApply: true
 ---
 
 # Site structure
 
 - Published files live under **`site/`** only. `Branding/` is git-tracked but **not** deployed.
-- Cloudflare Pages **Root directory** must be `site` (not repo root).
+- Deployed as a Cloudflare **Worker with static assets**, not Pages: root `wrangler.jsonc` sets `assets.directory` to `./site`.
 - URL map:
   - `/` — studio home
   - `/{luminous|shimmer|best-units}/` — product marketing
