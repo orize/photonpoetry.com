@@ -8,7 +8,7 @@ alwaysApply: false
 
 - One composition per first viewport; brand-led on studio home.
 - Prefer real product imagery when available; avoid abstract decoration as the main idea.
-- No cards in the hero; product catalog links may be list/rail treatments without heavy card chrome.
+- No cards in the hero; product catalog entries may be list/rail treatments without heavy card chrome (home catalog is currently non-linked while product pages are stubs).
 - Expressive fonts already in `site/assets/style.css` (Montserrat Light + Figtree); extend those tokens rather than adding Inter/Roboto/system stacks.
 - Keep motion purposeful (existing rise entrance); respect `prefers-reduced-motion`.
 - Mobile and desktop both must work; keep the shared CSS mobile-first.

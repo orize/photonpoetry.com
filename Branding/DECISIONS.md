@@ -58,6 +58,47 @@ _(None.)_
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
 
+### P-008 — Best Units home catalog blurb
+
+- **Decision:** Studio home Best Units blurb is “Get the conversion you want. One click.”; status remains In development.
+- **Why:** User-authored home catalog copy (Q-008).
+- **Tried / rejected:** “Convert measurements where you work — more soon.”
+- **Surface:** studio home
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** (pending)
+
+### P-007 — Unlink product pages from home (temporary)
+
+- **Decision:** Studio home does not link to `/luminous/`, `/shimmer/`, or `/best-units/` (header nav removed; catalog cards are non-interactive). Product pages and privacy/support stay published for App Store.
+- **Why:** User asked to unlink product pages for now while stubs are not ready as destinations.
+- **Tried / rejected:** Linked catalog cards and primary product nav on home.
+- **Surface:** studio home
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** (pending)
+- **Note:** Temporary — relink when product pages have real marketing content.
+
+### P-006 — Shimmer home catalog blurb
+
+- **Decision:** Studio home Shimmer blurb is the living-photo-stories paragraph; status remains In development.
+- **Why:** User-authored home catalog copy (Q-006).
+- **Tried / rejected:** “An iOS app from Photon Poetry — details coming as it takes form.”
+- **Surface:** studio home
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** (pending)
+
+### P-005 — Luminous home catalog blurb
+
+- **Decision:** Studio home Luminous blurb is the atmosphere/lighting paragraph; status remains In development.
+- **Why:** User-authored home catalog copy (Q-005).
+- **Tried / rejected:** “Turn photos into animated lighting scenes with in-app preview.”
+- **Surface:** studio home
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** (pending)
+
 ### P-004 — Display face: Montserrat Light
 
 - **Decision:** Headings use Montserrat Light (`--font-display` / weight 300); Syne retired.
