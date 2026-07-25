@@ -405,6 +405,7 @@ button:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   .studio-hero,
+  .studio-hero__tagline,
   .studio-hero__lede,
   .product-catalog {
     animation: none;
