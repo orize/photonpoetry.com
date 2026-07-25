@@ -54,12 +54,6 @@
           tools are designed to delight and make it easy for you to make
           beauty in your space.
         </p>
-        <p class="experiment-switcher" id="body-font-switcher" hidden>
-          Body font:
-          <a href="?v=a">A Manrope</a>
-          <a href="?v=b">B Figtree</a>
-          <a href="?v=c">C Source Sans 3</a>
-        </p>
       </section>
 
       <ul class="product-catalog">
@@ -104,23 +98,6 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Brand experiment E-002 (Q-003): body font via ?v=a|b|c
-      (function () {
-        var fonts = { a: "manrope", b: "figtree", c: "source-sans" };
-        var params = new URLSearchParams(window.location.search);
-        var v = (params.get("v") || "b").toLowerCase();
-        if (!fonts[v]) v = "b";
-        document.documentElement.setAttribute("data-body-font", fonts[v]);
-        var switcher = document.getElementById("body-font-switcher");
-        if (switcher) {
-          switcher.hidden = false;
-          switcher.querySelectorAll("a").forEach(function (link) {
-            var key = (link.getAttribute("href") || "").replace("?v=", "");
-            if (key === v) link.setAttribute("aria-current", "true");
-          });
-        }
-      })();
     </script>
   </body>
 </html>

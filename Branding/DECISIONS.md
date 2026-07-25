@@ -29,22 +29,13 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-003 — Body typeface: replace Manrope
-
-- **Source:** user
-- **Surface:** shared CSS (`--font-body`)
-- **Question:** Which body face replaces Manrope?
-- **Suggestion:** B Figtree — warmer and less “product UI default” than Manrope, still readable at body sizes.
-- **Status:** in-experiment
-- **Experiment:** E-002
-
 ### Q-002 — Heading typeface: Syne vs Montserrat Light
 
 - **Source:** user
 - **Surface:** shared CSS (all `--font-display` headings)
 - **Question:** Replace the current display face (Syne) with Montserrat Light on headings?
 - **Current:** `--font-display: "Syne", …` (700 weight)
-- **Suggestion:** Parked behind body-font experiment; revisit after E-002.
+- **Suggestion:** Ready after body-font pick; Montserrat Light is quieter/more neutral than Syne.
 - **Status:** queued
 
 ---
@@ -53,15 +44,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-002 — Body font variants
-
-- **Question:** Q-003
-- **Branch:** brand/studio-lede
-- **PR:** https://github.com/orize/photonpoetry.com/pull/3
-- **Options:** A Manrope (control) / B Figtree / C Source Sans 3
-- **Recommendation:** B — quieter warmth than Manrope without going geometric-startup
-- **Status:** awaiting-you
-- **Preview:** local `http://127.0.0.1:8080/?v=b` (also `?v=a`, `?v=c`); on-page switcher
+_(None.)_
 
 ### Template
 
@@ -81,6 +64,16 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-003 — Body face: Figtree
+
+- **Decision:** Site body type is Figtree (`--font-body`); Manrope retired.
+- **Why:** User pick B on E-002 / Q-003 — warmer and less default-UI than Manrope.
+- **Tried / rejected:** A Manrope (control); C Source Sans 3.
+- **Surface:** shared CSS
+- **Date:** 2026-07-25
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/3
 
 ### P-002 — Studio voice: Make beautiful
 
