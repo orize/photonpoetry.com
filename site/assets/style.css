@@ -106,7 +106,7 @@ button:focus-visible {
 .site-header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
@@ -228,15 +228,7 @@ button:focus-visible {
   padding: 1.25rem 1.35rem;
   border-top: 1px solid var(--border);
   background: transparent;
-  text-decoration: none;
   color: inherit;
-  transition: border-color 0.2s ease, padding-left 0.2s ease;
-}
-
-.product-card:hover {
-  border-top-color: var(--accent);
-  padding-left: 1.6rem;
-  text-decoration: none;
 }
 
 .product-card__name {
@@ -260,6 +252,7 @@ button:focus-visible {
 
 .product-card__blurb {
   margin: 0.5rem 0 0;
+  max-width: 36rem;
   color: var(--text-muted);
   font-size: 0.975rem;
 }
@@ -414,10 +407,6 @@ button:focus-visible {
   .product-catalog {
     animation: none;
   }
-
-  .product-card:hover {
-    padding-left: 1.35rem;
-  }
 }
 
 @media (min-width: 40rem) {
@@ -441,16 +430,8 @@ button:focus-visible {
     padding: 0.25rem 1.5rem 0.25rem 1.75rem;
   }
 
-  .product-card:first-child {
+  .product-catalog > li:first-child .product-card {
     border-left: none;
     padding-left: 0;
-  }
-
-  .product-card:hover {
-    padding-left: 2rem;
-  }
-
-  .product-card:first-child:hover {
-    padding-left: 0.25rem;
   }
 }
