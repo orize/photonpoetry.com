@@ -103,4 +103,5 @@ Out of scope: <explicit>
 - No merge/push to `main` without explicit user approval
 - No Spec Kit init in this repo
 - No inventing products, ratings, App Store URLs, or ship dates
+- Dark logo backgrounds always use the reverse mark (see `brand.mdc`)
 - Mechanical site fixes (broken links, redirects) belong in `brand-site`, not this skill
