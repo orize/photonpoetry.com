@@ -182,6 +182,15 @@ Survived the promotion gate and/or already locked in `.cursor/rules`.
 - **Date:** 2026-07-25
 - **Rules:** `.cursor/rules/brand.mdc`, `.cursor/rules/content.mdc`
 
+### D-005 — Reverse logo on dark backgrounds
+
+- **Decision:** If a logo sits on a dark background, always use the reverse mark — `site/assets/logo-reverse.svg`, exported from `Branding/PP_logo-01-reverse.svg`. On light backgrounds, use the standard mark `site/assets/logo.svg`. Never mix the two.
+- **Why:** User hard lock (“always, always”). The studio home quiet dark panel (P-001) was serving the standard `logo.svg` and was **not** compliant; it now points at `logo-reverse.svg`.
+- **Tried / rejected:** Treating `site/assets/logo.svg` as the reverse mark — it is not.
+- **Surface:** shared / logo assets
+- **Date:** 2026-07-26
+- **Rules:** `.cursor/rules/brand.mdc` (also noted in `brand-site` / `brand-iterate`)
+
 ---
 
 ## Section templates

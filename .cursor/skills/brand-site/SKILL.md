@@ -41,3 +41,4 @@ cd site && python3 -m http.server 8080
 - Nested pages use `../assets/` or `../../assets/` for CSS/favicon.
 - Per-product privacy/support; legacy `/privacy` → `/luminous/privacy/`.
 - Export new marks into `site/assets/`; do not link `.af` files.
+- Dark logo plate → reverse mark (`assets/logo-reverse.svg`); light plate → standard mark (`assets/logo.svg`). `logo.svg` is not the reverse.
