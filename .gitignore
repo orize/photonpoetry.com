@@ -3,6 +3,8 @@
 *.af~lock~
 Branding/Exploration */
 site/assets/favicon-luminous-legacy.svg
+
+# wrangler
 # wrangler files
 .wrangler
 .dev.vars*

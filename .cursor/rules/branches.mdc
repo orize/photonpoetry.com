@@ -1,0 +1,37 @@
+---
+description: Branch naming for Cloudflare preview aliases — hyphenated typed prefixes, no slashes
+alwaysApply: true
+---
+
+# Branch naming
+
+Cloudflare Workers preview aliases accept only lowercase letters, digits, `-`, and `_`
+(max 63 chars). A branch name containing `/` is rejected server-side with
+`invalid alias: … [code: 10021]`, so slashes are banned here.
+
+## Format
+
+    <prefix>-<short-slug>
+
+- Lowercase `[a-z0-9-]` only. No `/`, no `_`, no spaces, no uppercase.
+- Keep under 63 characters.
+
+## Prefixes
+
+| Prefix | Use |
+|--------|-----|
+| `brand-` | Taste experiments run by `brand-iterate` |
+| `site-` | Mechanical site work — links, redirects, assets, ASC URL wiring |
+| `fix-` | Bug fixes |
+| `chore-` | Tooling, config, docs |
+
+Good: `brand-home-product-copy`, `site-redirect-cleanup`, `chore-workers-assets-config`
+
+Bad: `brand/home-product-copy`, `feature/bar`, `Fix_Nav`, `my branch`
+
+## Notes
+
+- Branches created before this rule (`brand/…`) stay as they are; do not rename them.
+- Every non-production branch push triggers a Workers preview build (`wrangler versions upload`),
+  which never promotes to production.
+- **Do not push or merge to `main` without explicit user approval.**
