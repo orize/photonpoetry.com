@@ -8,7 +8,7 @@ Static studio site for [photonpoetry.com](https://photonpoetry.com). No build st
 
 | Path | Purpose |
 |------|---------|
-| `site/` | **Published** site — Cloudflare Pages root directory |
+| `site/` | **Published** site — `assets.directory` in `wrangler.jsonc` |
 | `Branding/` | Affinity sources and brand exports — committed to GitHub, **not** deployed |
 | `.cursor/` | Project rules and skills for agents |
 
@@ -34,16 +34,20 @@ python3 -m http.server 8080
 
 Open `http://127.0.0.1:8080/`.
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare Workers
 
-1. Cloudflare Dashboard → **Workers & Pages** → project for `orize/photonpoetry.com`.
+The site deploys as a Worker serving static assets — not Cloudflare Pages. Config lives in
+[`wrangler.jsonc`](wrangler.jsonc) at the repo root, which publishes `./site` and nothing else.
+
+1. Cloudflare Dashboard → **Workers & Pages** → `photonpoetry-com`.
 2. Build settings:
    - **Production branch:** `main`
-   - **Framework preset:** None
-   - **Build command:** *(empty)*
-   - **Root directory:** `site` ← **required** after this layout change
-   - **Build output directory:** `/` (or leave default for static)
-3. Production deploys from pushes to `main`. **Do not merge to `main` without review.**
+   - **Build command:** *(empty — no build step)*
+   - **Non-production deploy command:** `npx wrangler versions upload`
+   - **Production deploy command:** `npx wrangler deploy`
+3. `versions upload` publishes a preview version and does **not** promote it, so feature-branch
+   builds can never change the live site. Only `wrangler deploy` on `main` does.
+4. Production deploys from pushes to `main`. **Do not merge to `main` without review.**
 
 DNS and custom domains (`photonpoetry.com`, `www`) stay as configured.
 

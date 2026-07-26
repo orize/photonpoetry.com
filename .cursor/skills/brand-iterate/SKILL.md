@@ -56,7 +56,7 @@ read ledger → classify current user message
 ### When user says run / continue / go on the loop
 
 1. Apply **Stack priority**. Update the ledger as you go (ids `Q-` / `E-` / `P-` / `D-`; Open questions include `Source: user | agent`).
-2. Create branch `brand/<short-slug>` (do not merge to `main`).
+2. Create branch `brand-<short-slug>` — hyphens only, no `/` (see [`branches.mdc`](../../rules/branches.mdc)). Do not merge to `main`.
 3. Implement **2–3** mutually exclusive variants:
    - **A** = control (current)
    - **B** / **C** = alternatives; for copy/CSS use `?v=b` / `?v=c` on the affected page when needed so previews flip without merging

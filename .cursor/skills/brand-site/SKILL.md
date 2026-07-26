@@ -32,8 +32,8 @@ cd site && python3 -m http.server 8080
 
 ## Deploy
 
-- Cloudflare Pages root directory: **`site`**
-- Production branch: `main`
+- Cloudflare Workers static assets: root `wrangler.jsonc`, `assets.directory` = **`./site`**
+- Production branch: `main` (`npx wrangler deploy`); other branches upload preview versions only
 - **Never merge/push to `main` without explicit user approval**
 
 ## Editing tips
