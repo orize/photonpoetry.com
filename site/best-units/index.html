@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Best Units — Photon Poetry</title>
+    <meta
+      name="description"
+      content="Best Units converts measurements where you work. In development."
+    />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand-link" href="/">
+          <img
+            class="brand-link__mark"
+            src="../assets/favicon.svg"
+            width="28"
+            height="28"
+            alt=""
+          />
+          <span class="brand-link__text">Photon Poetry</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/best-units/" aria-current="page">Best Units</a>
+          <a href="/best-units/privacy/">Privacy</a>
+          <a href="/best-units/support/">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Photon Poetry</p>
+        <h1>Best Units</h1>
+        <p class="hero__lede">
+          In development. Convert measurements where you work — more soon.
+        </p>
+        <p>
+          <span class="cta cta--disabled" aria-disabled="true">
+            In development
+          </span>
+        </p>
+        <p class="cta-note">
+          No store listing yet — check back here for updates.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span id="year"></span> Photon Poetry</p>
+        <nav aria-label="Footer">
+          <a href="/best-units/privacy/">Privacy</a>
+          <a href="/best-units/support/">Support</a>
+          <a href="mailto:hello@photonpoetry.com">hello@photonpoetry.com</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
