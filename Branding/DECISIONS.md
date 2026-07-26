@@ -143,9 +143,9 @@ Survived the promotion gate and/or already locked in `.cursor/rules`.
 
 ### D-005 — Reverse logo on dark backgrounds
 
-- **Decision:** If a logo sits on a dark background, always use the reverse mark (light / white ink, orange accent preserved). On light backgrounds, use a dark-ink export. Never dark-ink on dark, never white ink on light.
-- **Why:** User hard lock (“always, always”). Studio home quiet dark panel (P-001) already uses reverse `site/assets/logo.svg` (white + `#ffa400`) — compliant.
-- **Tried / rejected:** Placing a dark-ink mark on a dark field.
+- **Decision:** If a logo sits on a dark background, always use the reverse mark — `site/assets/logo-reverse.svg`, exported from `Branding/PP_logo-01-reverse.svg`. On light backgrounds, use the standard mark `site/assets/logo.svg`. Never mix the two.
+- **Why:** User hard lock (“always, always”). The studio home quiet dark panel (P-001) was serving the standard `logo.svg` and was **not** compliant; it now points at `logo-reverse.svg`.
+- **Tried / rejected:** Treating `site/assets/logo.svg` as the reverse mark — it is not.
 - **Surface:** shared / logo assets
 - **Date:** 2026-07-26
 - **Rules:** `.cursor/rules/brand.mdc` (also noted in `brand-site` / `brand-iterate`)

@@ -8,8 +8,8 @@ alwaysApply: true
 - Studio name: **Photon Poetry** (not Photonectar on public pages).
 - Products only: **Luminous**, **Shimmer**, **Best Units**. Do not invent additional products.
 - Brand is **fresh and unformed** — keep visuals and voice provisional; do not invent a heavy identity system, fake history, or overconfident taglines.
-- Logo sources live in `Branding/` (Affinity). Web assets are exported under `site/assets/` (`logo.svg`, `favicon.svg`). Never serve or link `.af` files from the site.
-- **Reverse on dark:** if a logo sits on a dark background, always use the reverse mark (light / white ink, orange accent preserved). Today that is `site/assets/logo.svg`. Do not place a dark-ink mark on a dark field.
-- **On light backgrounds:** use a dark-ink export (`site/assets/logo-on-light.svg` when first needed — export from Affinity; do not invent fills). Never put white ink on a light field.
+- Logo sources live in `Branding/` (Affinity). Web assets are exported under `site/assets/` (`logo.svg`, `logo-reverse.svg`, `favicon.svg`). Never serve or link `.af` files from the site.
+- **Reverse on dark:** if a logo sits on a dark background, always use the reverse mark — `site/assets/logo-reverse.svg`, exported from `Branding/PP_logo-01-reverse.svg`. `site/assets/logo.svg` is **not** the reverse mark; never place it on a dark field.
+- **On light backgrounds:** use the standard mark `site/assets/logo.svg` (from `Branding/PP_logo-01.svg`). Never put the reverse mark on a light field.
 - Accent from the mark: `#ffa400` / orange. Avoid generic AI landing tropes (purple gradients, cream+serif+terracotta clusters, glow-heavy dark UI).
 - Shared contacts for now: `hello@photonpoetry.com`, `support@photonpoetry.com`.
