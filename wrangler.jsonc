@@ -1,14 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "photonpoetry-com",
-  "compatibility_date": "2026-06-29",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "."
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  "compatibility_date": "2026-07-25",
+  // Only site/ ships. Branding/ (Affinity sources) must never reach the CDN.
+  "assets": { "directory": "./site" },
+  "observability": { "enabled": true }
 }
