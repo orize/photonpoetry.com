@@ -32,6 +32,7 @@ Handle each message in this order:
 - A user interrupt can preempt an existing experiment, but do not ask for both decisions in the same response.
 - Mention a parked experiment in one short clause only when useful.
 - End every PM turn with **exactly one** clear ask, e.g. `Reply **B**, **C**, **reject**, or **defer**.`
+- **Preview link required:** Every decision or approval ask in chat must include at least one clickable Workers preview URL. Prefer the branch preview (`https://brand-<slug>-photonpoetry-com.…workers.dev/`). If the URL is not ready yet, wait/poll the PR’s Cloudflare deploy comment before prompting. Localhost alone is not enough for an approval ask.
 
 ## Suggestions
 
@@ -39,6 +40,7 @@ Every decision prompt includes:
 
 - **Recommendation:** letter or action
 - One-line why
+- At least one Workers preview link (see above)
 
 Never silently auto-pick. The user may ignore the recommendation.
 
@@ -62,11 +64,11 @@ read ledger → classify current user message
    - **B** / **C** = alternatives; for copy/CSS use `?v=b` / `?v=c` on the affected page when needed so previews flip without merging
 4. Note local preview: `cd site && python3 -m http.server 8080`
 5. Open PR with `gh pr create` (body shape below). **Do not merge.**
-6. Add Active experiment row (`awaiting-you`), set question to `in-experiment`, stop and prompt.
+6. Add Active experiment row (`awaiting-you`), set question to `in-experiment`, stop and prompt — chat prompt must include the Workers preview links (repeat the PR table URLs).
 
 ### On pick (A / B / C / reject / defer)
 
-- **A/B/C:** Apply winner on the branch; remove loser variants; move to Provisional (`iterations: 1` or bump if reaffirming); clear Active row; set question done/removed from Open; update PR “ready when you approve merge”; still **no `main` merge** until explicit approval.
+- **A/B/C:** Apply winner on the branch; remove loser variants; move to Provisional (`iterations: 1` or bump if reaffirming); clear Active row; set question done/removed from Open; update PR “ready when you approve merge”; still **no `main` merge** until explicit approval. The stop prompt must include the **branch preview link** to the applied result (after variant cleanup), e.g. “Ready when you approve merge — preview: \<branch-url\>”.
 - **reject:** Close/cancel experiment; note tried/rejected on the question or a short ledger note; re-queue or drop per user why.
 - **defer:** Set question `deferred`; clear or pause Active; stop.
 
@@ -97,6 +99,8 @@ Reply **A**, **B**, **C**, **reject**, or **defer**. One decision only.
 
 Out of scope: <explicit>
 ```
+
+The chat prompt must repeat those preview links (or, after apply, the single winner / branch preview link). Do not ask for a decision or merge approval without a clickable Workers URL in the message.
 
 ## Hard stops
 
