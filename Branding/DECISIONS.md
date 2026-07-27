@@ -29,6 +29,14 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
+### Q-012 — Best Units home catalog blurb (update)
+
+- **Source:** user
+- **Surface:** studio home
+- **Question:** Replace Best Units home blurb with the two-line convert/copy-or-replace copy?
+- **Suggestion:** Apply as authored (supersedes P-008).
+- **Status:** applying
+
 ### Q-010 — Hero mark-plate shape
 
 - **Source:** agent
@@ -51,7 +59,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-010 — Best Units home catalog blurb
+
+- **Question:** Q-012
+- **Branch:** brand-best-units-blurb
+- **PR:** (pending)
+- **Options:** Apply user-authored two-line blurb (supersedes P-008)
+- **Recommendation:** Apply — user-authored home copy
+- **Status:** applying
 
 ### Template
 
@@ -72,6 +87,17 @@ _(None.)_
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
 
+### P-010 — Best Units home catalog blurb (two-line)
+
+- **Decision:** Studio home Best Units blurb is “Get the conversion you need. One click. / Copy it or replace it? Another click.”; status remains In development.
+- **Why:** User-authored home catalog copy (Q-012).
+- **Tried / rejected:** “Get the conversion you want. One click.” (P-008); “Convert measurements where you work — more soon.”
+- **Surface:** studio home
+- **Date:** 2026-07-27
+- **Iterations:** 1
+- **PR:** (pending)
+- **Supersedes:** P-008
+
 ### P-009 — Studio home catalog: open stack
 
 - **Decision:** Studio home catalog is an open stack — no column rules or border chrome; gutters ~50% wider than the B preview (mobile `2.625rem`, desktop column `3.75rem`).
@@ -91,6 +117,7 @@ Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3
 - **Date:** 2026-07-25
 - **Iterations:** 1
 - **PR:** https://github.com/orize/photonpoetry.com/pull/5
+- **Note:** Superseded by P-010.
 
 ### P-007 — Unlink product pages from home (temporary)
 
