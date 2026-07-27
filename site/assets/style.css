@@ -219,14 +219,14 @@ button:focus-visible {
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 0.75rem;
+  gap: 2.625rem;
   animation: rise 0.7s ease-out 0.22s both;
 }
 
 .product-card {
   display: block;
-  padding: 1.25rem 1.35rem;
-  border-top: 1px solid var(--border);
+  padding: 0;
+  border: none;
   background: transparent;
   color: inherit;
 }
@@ -421,17 +421,6 @@ button:focus-visible {
 
   .product-catalog {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-  }
-
-  .product-card {
-    border-top: none;
-    border-left: 1px solid var(--border);
-    padding: 0.25rem 1.5rem 0.25rem 1.75rem;
-  }
-
-  .product-catalog > li:first-child .product-card {
-    border-left: none;
-    padding-left: 0;
+    gap: 0 3.75rem;
   }
 }

@@ -29,7 +29,21 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-_(None.)_
+### Q-010 — Hero mark-plate shape
+
+- **Source:** agent
+- **Surface:** studio home
+- **Question:** Should the quiet dark logo plate stay as a rounded inset, become a full-bleed band, or drop the plate entirely on a light field (standard mark)?
+- **Suggestion:** Keep rounded plate until catalog framing lands; then fork plate shape.
+- **Status:** queued
+
+### Q-011 — Page atmosphere wash
+
+- **Source:** agent
+- **Surface:** studio home / shared CSS
+- **Question:** Is the cool blue-gray page wash the right provisional atmosphere, or should it go quieter (flatter) or warmer?
+- **Suggestion:** Defer until hero composition and catalog framing settle.
+- **Status:** queued
 
 ---
 
@@ -57,6 +71,16 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-009 — Studio home catalog: open stack
+
+- **Decision:** Studio home catalog is an open stack — no column rules or border chrome; gutters ~50% wider than the B preview (mobile `2.625rem`, desktop column `3.75rem`).
+- **Why:** User pick B on E-009 / Q-009, with wider gutters for breath.
+- **Tried / rejected:** A rule-separated columns (control); C compact strip (name+status inline).
+- **Surface:** studio home
+- **Date:** 2026-07-27
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/10
 
 ### P-008 — Best Units home catalog blurb
 
