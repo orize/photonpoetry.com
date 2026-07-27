@@ -29,7 +29,29 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-_(None.)_
+### Q-009 — Studio home catalog framing
+
+- **Source:** agent
+- **Surface:** studio home
+- **Question:** How should the three products present as a catalog without feeling like dashboard cards?
+- **Suggestion:** B — open stack, no column rules / border chrome.
+- **Status:** in-experiment
+
+### Q-010 — Hero mark-plate shape
+
+- **Source:** agent
+- **Surface:** studio home
+- **Question:** Should the quiet dark logo plate stay as a rounded inset, become a full-bleed band, or drop the plate entirely on a light field (standard mark)?
+- **Suggestion:** Keep rounded plate until catalog framing lands; then fork plate shape.
+- **Status:** queued
+
+### Q-011 — Page atmosphere wash
+
+- **Source:** agent
+- **Surface:** studio home / shared CSS
+- **Question:** Is the cool blue-gray page wash the right provisional atmosphere, or should it go quieter (flatter) or warmer?
+- **Suggestion:** Defer until hero composition and catalog framing settle.
+- **Status:** queued
 
 ---
 
@@ -37,7 +59,14 @@ _(None.)_
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-009 — Studio home catalog framing
+
+- **Question:** Q-009
+- **Branch:** brand-home-catalog-frame
+- **PR:** (pending)
+- **Options:** A control (rule-separated columns) / B open stack (no chrome) / C compact strip (name+status one line)
+- **Recommendation:** B — stronger “no cards”; honest while products are stubs
+- **Status:** applying
 
 ### Template
 
