@@ -29,14 +29,6 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-012 — Best Units home catalog blurb (update)
-
-- **Source:** user
-- **Surface:** studio home
-- **Question:** Replace Best Units home blurb with the two-line convert/copy-or-replace copy?
-- **Suggestion:** Apply as authored (supersedes P-008).
-- **Status:** applying
-
 ### Q-010 — Hero mark-plate shape
 
 - **Source:** agent
@@ -59,14 +51,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-010 — Best Units home catalog blurb
-
-- **Question:** Q-012
-- **Branch:** brand-best-units-blurb
-- **PR:** (pending)
-- **Options:** Apply user-authored two-line blurb (supersedes P-008)
-- **Recommendation:** Apply — user-authored home copy
-- **Status:** applying
+_(None.)_
 
 ### Template
 
@@ -95,7 +80,7 @@ Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3
 - **Surface:** studio home
 - **Date:** 2026-07-27
 - **Iterations:** 1
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/11
 - **Supersedes:** P-008
 
 ### P-009 — Studio home catalog: open stack
