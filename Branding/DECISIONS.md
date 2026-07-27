@@ -63,10 +63,10 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-009
 - **Branch:** brand-home-catalog-frame
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/10
 - **Options:** A control (rule-separated columns) / B open stack (no chrome) / C compact strip (name+status one line)
 - **Recommendation:** B — stronger “no cards”; honest while products are stubs
-- **Status:** applying
+- **Status:** awaiting-you
 
 ### Template
 
