@@ -29,14 +29,6 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-009 — Studio home catalog framing
-
-- **Source:** agent
-- **Surface:** studio home
-- **Question:** How should the three products present as a catalog without feeling like dashboard cards?
-- **Suggestion:** B — open stack, no column rules / border chrome.
-- **Status:** in-experiment
-
 ### Q-010 — Hero mark-plate shape
 
 - **Source:** agent
@@ -59,14 +51,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-009 — Studio home catalog framing
-
-- **Question:** Q-009
-- **Branch:** brand-home-catalog-frame
-- **PR:** https://github.com/orize/photonpoetry.com/pull/10
-- **Options:** A control (rule-separated columns) / B open stack (no chrome) / C compact strip (name+status one line)
-- **Recommendation:** B — stronger “no cards”; honest while products are stubs
-- **Status:** awaiting-you
+_(None.)_
 
 ### Template
 
@@ -86,6 +71,16 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-009 — Studio home catalog: open stack
+
+- **Decision:** Studio home catalog is an open stack — no column rules or border chrome; gutters ~50% wider than the B preview (mobile `2.625rem`, desktop column `3.75rem`).
+- **Why:** User pick B on E-009 / Q-009, with wider gutters for breath.
+- **Tried / rejected:** A rule-separated columns (control); C compact strip (name+status inline).
+- **Surface:** studio home
+- **Date:** 2026-07-27
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/10
 
 ### P-008 — Best Units home catalog blurb
 

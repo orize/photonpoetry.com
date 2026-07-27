@@ -104,13 +104,6 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      /* E-009: ?v=b | ?v=c flips catalog framing without merging */
-      (function () {
-        var v = new URLSearchParams(location.search).get("v");
-        if (v === "b" || v === "c") {
-          document.body.classList.add("variant-" + v);
-        }
-      })();
     </script>
   </body>
 </html>
