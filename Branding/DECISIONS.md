@@ -29,12 +29,20 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-011 — Page atmosphere wash
+### Q-013 — Studio header weight
 
 - **Source:** agent
-- **Surface:** studio home / shared CSS
-- **Question:** Is the cool blue-gray page wash the right provisional atmosphere, or should it go quieter (flatter) or warmer?
-- **Suggestion:** Defer until hero composition and catalog framing settle.
+- **Surface:** studio home / shared header
+- **Question:** Should the site header stay as a light blurred bar, go quieter (no blur / no bottom rule), or drop chrome entirely to a bare brand link?
+- **Suggestion:** Fork after atmosphere wash settles.
+- **Status:** queued
+
+### Q-014 — Accent strength on “Make beautiful”
+
+- **Source:** agent
+- **Surface:** studio home
+- **Question:** Is the orange “Make beautiful” tagline the right accent weight, or should it go softer (muted) or stronger (brighter / slightly larger)?
+- **Suggestion:** Keep current until atmosphere and header settle; then fork.
 - **Status:** queued
 
 ---
@@ -63,6 +71,17 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-012 — Page atmosphere: larger neutral stone wash
+
+- **Decision:** Site page field is a larger neutral stone wash (shared `--bg` / body gradients), not cool blue-gray; accent soft radial stays, plus a second corner wash for scale.
+- **Why:** User pick C on E-012 / Q-011, with bigger wash and more neutral (less warm/beige) stone.
+- **Tried / rejected:** A cool blue-gray wash (control); B quieter flat field; C preview’s warmer beige-leaning stone.
+- **Surface:** studio home / shared CSS
+- **Date:** 2026-07-29
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/13
+- **Resolves:** Q-011
 
 ### P-011 — Hero mark plate: iOS squircle
 
