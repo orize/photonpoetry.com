@@ -55,7 +55,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-013
 - **Branch:** brand-home-header-weight
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/14
 - **Options:** A blurred bar with rule (control) / B quieter no blur/rule / C bare brand link
 - **Recommendation:** B — less chrome competing with the squircle plate on the new stone wash
 - **Status:** awaiting-you
