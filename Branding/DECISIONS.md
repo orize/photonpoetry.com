@@ -29,14 +29,6 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-011 — Page atmosphere wash
-
-- **Source:** agent
-- **Surface:** studio home / shared CSS
-- **Question:** Is the cool blue-gray page wash the right provisional atmosphere, or should it go quieter (flatter) or warmer?
-- **Suggestion:** Prefer quieter flat (B) now that plate and catalog framing have landed.
-- **Status:** in-experiment
-
 ### Q-013 — Studio header weight
 
 - **Source:** agent
@@ -59,14 +51,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-012 — Page atmosphere wash
-
-- **Question:** Q-011
-- **Branch:** brand-home-atmosphere-wash
-- **PR:** https://github.com/orize/photonpoetry.com/pull/13
-- **Options:** A cool blue-gray wash (control) / B quieter flat field / C warmer stone wash
-- **Recommendation:** B — flatter field lets the squircle plate and accent tagline read without gradient theater
-- **Status:** awaiting-you
+_(None.)_
 
 ### Template
 
@@ -86,6 +71,17 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-012 — Page atmosphere: larger neutral stone wash
+
+- **Decision:** Site page field is a larger neutral stone wash (shared `--bg` / body gradients), not cool blue-gray; accent soft radial stays, plus a second corner wash for scale.
+- **Why:** User pick C on E-012 / Q-011, with bigger wash and more neutral (less warm/beige) stone.
+- **Tried / rejected:** A cool blue-gray wash (control); B quieter flat field; C preview’s warmer beige-leaning stone.
+- **Surface:** studio home / shared CSS
+- **Date:** 2026-07-29
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/13
+- **Resolves:** Q-011
 
 ### P-011 — Hero mark plate: iOS squircle
 

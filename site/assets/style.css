@@ -4,8 +4,8 @@
 
 :root {
   color-scheme: light dark;
-  --bg: #e8eef4;
-  --bg-elevated: #f4f7fa;
+  --bg: #e7e6e3;
+  --bg-elevated: #f1f0ed;
   --text: #0e1620;
   --text-muted: #4a5a6a;
   --accent: #d98900;
@@ -24,8 +24,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0b1219;
-    --bg-elevated: #141d27;
+    --bg: #141312;
+    --bg-elevated: #1c1b19;
     --text: #e8eef4;
     --text-muted: #9aabbc;
     --accent: #ffa400;
@@ -52,42 +52,18 @@ body {
   display: flex;
   flex-direction: column;
   background:
-    radial-gradient(100% 70% at 0% 0%, var(--accent-soft), transparent 45%),
-    linear-gradient(165deg, #d5e0ea 0%, var(--bg) 42%, #cfd9e4 100%);
+    radial-gradient(140% 95% at 0% 0%, var(--accent-soft), transparent 58%),
+    radial-gradient(90% 70% at 100% 100%, rgba(14, 22, 32, 0.06), transparent 55%),
+    linear-gradient(165deg, #d4d3cf 0%, var(--bg) 40%, #c9c8c3 100%);
   color: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background:
-      radial-gradient(90% 60% at 0% 0%, var(--accent-soft), transparent 50%),
-      linear-gradient(165deg, #0b1219 0%, #101820 50%, #0a1016 100%);
-  }
-}
-
-/* E-012 atmosphere wash — B: quieter flat field */
-body.variant-b {
-  background: var(--bg);
-}
-
-@media (prefers-color-scheme: dark) {
-  body.variant-b {
-    background: var(--bg);
-  }
-}
-
-/* E-012 atmosphere wash — C: warmer stone wash (not cream/terracotta) */
-body.variant-c {
-  background:
-    radial-gradient(100% 70% at 0% 0%, var(--accent-soft), transparent 45%),
-    linear-gradient(165deg, #e5e1db 0%, #ebe8e3 42%, #ddd8d1 100%);
-}
-
-@media (prefers-color-scheme: dark) {
-  body.variant-c {
-    background:
-      radial-gradient(90% 60% at 0% 0%, var(--accent-soft), transparent 50%),
-      linear-gradient(165deg, #141210 0%, #1a1714 50%, #100e0c 100%);
+      radial-gradient(130% 90% at 0% 0%, var(--accent-soft), transparent 58%),
+      radial-gradient(85% 65% at 100% 100%, rgba(0, 0, 0, 0.35), transparent 55%),
+      linear-gradient(165deg, #100f0e 0%, var(--bg) 45%, #0c0b0a 100%);
   }
 }
 
