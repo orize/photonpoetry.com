@@ -34,8 +34,8 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home / shared header
 - **Question:** Should the site header stay as a light blurred bar, go quieter (no blur / no bottom rule), or drop chrome entirely to a bare brand link?
-- **Suggestion:** Fork after atmosphere wash settles.
-- **Status:** queued
+- **Suggestion:** Prefer quieter (B) now that atmosphere wash has landed.
+- **Status:** in-experiment
 
 ### Q-014 — Accent strength on “Make beautiful”
 
@@ -51,7 +51,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-013 — Studio header weight
+
+- **Question:** Q-013
+- **Branch:** brand-home-header-weight
+- **PR:** (pending)
+- **Options:** A blurred bar with rule (control) / B quieter no blur/rule / C bare brand link
+- **Recommendation:** B — less chrome competing with the squircle plate on the new stone wash
+- **Status:** awaiting-you
 
 ### Template
 
