@@ -94,33 +94,6 @@ button:focus-visible {
   backdrop-filter: blur(10px);
 }
 
-/* E-013 header weight — B: quieter (no blur / no rule) */
-body.variant-b .site-header {
-  border-bottom: none;
-  background: transparent;
-  backdrop-filter: none;
-}
-
-/* E-013 header weight — C: bare brand link (no chrome) */
-body.variant-c .site-header {
-  border-bottom: none;
-  background: transparent;
-  backdrop-filter: none;
-  padding-block: 0.85rem;
-}
-
-body.variant-c .brand-link__mark {
-  width: 1.35rem;
-  height: 1.35rem;
-}
-
-body.variant-c .brand-link__text {
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-}
-
-.site-header__inner,
 .site-footer__inner,
 .page {
   width: min(100% - 2.5rem, var(--max-width));
@@ -132,6 +105,8 @@ body.variant-c .brand-link__text {
 }
 
 .site-header__inner {
+  width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
