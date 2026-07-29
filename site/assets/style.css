@@ -65,6 +65,32 @@ body {
   }
 }
 
+/* E-012 atmosphere wash — B: quieter flat field */
+body.variant-b {
+  background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  body.variant-b {
+    background: var(--bg);
+  }
+}
+
+/* E-012 atmosphere wash — C: warmer stone wash (not cream/terracotta) */
+body.variant-c {
+  background:
+    radial-gradient(100% 70% at 0% 0%, var(--accent-soft), transparent 45%),
+    linear-gradient(165deg, #e5e1db 0%, #ebe8e3 42%, #ddd8d1 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  body.variant-c {
+    background:
+      radial-gradient(90% 60% at 0% 0%, var(--accent-soft), transparent 50%),
+      linear-gradient(165deg, #141210 0%, #1a1714 50%, #100e0c 100%);
+  }
+}
+
 a {
   color: var(--accent);
   text-decoration-thickness: 1px;

@@ -34,7 +34,23 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home / shared CSS
 - **Question:** Is the cool blue-gray page wash the right provisional atmosphere, or should it go quieter (flatter) or warmer?
-- **Suggestion:** Defer until hero composition and catalog framing settle.
+- **Suggestion:** Prefer quieter flat (B) now that plate and catalog framing have landed.
+- **Status:** in-experiment
+
+### Q-013 — Studio header weight
+
+- **Source:** agent
+- **Surface:** studio home / shared header
+- **Question:** Should the site header stay as a light blurred bar, go quieter (no blur / no bottom rule), or drop chrome entirely to a bare brand link?
+- **Suggestion:** Fork after atmosphere wash settles.
+- **Status:** queued
+
+### Q-014 — Accent strength on “Make beautiful”
+
+- **Source:** agent
+- **Surface:** studio home
+- **Question:** Is the orange “Make beautiful” tagline the right accent weight, or should it go softer (muted) or stronger (brighter / slightly larger)?
+- **Suggestion:** Keep current until atmosphere and header settle; then fork.
 - **Status:** queued
 
 ---
@@ -43,7 +59,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-012 — Page atmosphere wash
+
+- **Question:** Q-011
+- **Branch:** brand-home-atmosphere-wash
+- **PR:** (pending)
+- **Options:** A cool blue-gray wash (control) / B quieter flat field / C warmer stone wash
+- **Recommendation:** B — flatter field lets the squircle plate and accent tagline read without gradient theater
+- **Status:** awaiting-you
 
 ### Template
 
