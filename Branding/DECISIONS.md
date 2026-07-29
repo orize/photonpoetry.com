@@ -29,14 +29,6 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-010 — Hero mark-plate shape
-
-- **Source:** agent
-- **Surface:** studio home
-- **Question:** Should the quiet dark logo plate stay as a rounded inset, become a full-bleed band, or drop the plate entirely on a light field (standard mark)?
-- **Suggestion:** Keep rounded plate until catalog framing lands; then fork plate shape.
-- **Status:** queued
-
 ### Q-011 — Page atmosphere wash
 
 - **Source:** agent
@@ -71,6 +63,17 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-011 — Hero mark plate: iOS squircle
+
+- **Decision:** Studio home quiet dark logo plate keeps the inset stage and reverse mark; corners use `border-radius` plus `corner-shape: squircle` (iOS-like). Unsupported browsers fall back to the prior rounded rect.
+- **Why:** User answered Q-010 — emulate iOS squircle via `corner-shape: squircle`.
+- **Tried / rejected:** Full-bleed dark band; drop plate for standard mark on light field; circular-arc rounded rect alone.
+- **Surface:** studio home
+- **Date:** 2026-07-29
+- **Iterations:** 1
+- **PR:** (pending)
+- **Resolves:** Q-010
 
 ### P-010 — Best Units home catalog blurb (two-line)
 
