@@ -63,7 +63,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-011
 - **Branch:** brand-home-atmosphere-wash
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/13
 - **Options:** A cool blue-gray wash (control) / B quieter flat field / C warmer stone wash
 - **Recommendation:** B — flatter field lets the squircle plate and accent tagline read without gradient theater
 - **Status:** awaiting-you
