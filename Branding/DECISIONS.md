@@ -72,7 +72,7 @@ Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3
 - **Surface:** studio home
 - **Date:** 2026-07-29
 - **Iterations:** 1
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/12
 - **Resolves:** Q-010
 
 ### P-010 — Best Units home catalog blurb (two-line)
