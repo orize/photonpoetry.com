@@ -34,8 +34,8 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home
 - **Question:** With the large logo plate already saying Photon Poetry, should the H1 wordmark stay, shrink, or drop so the plate carries the brand alone?
-- **Suggestion:** Fork after tagline accent settles.
-- **Status:** queued
+- **Suggestion:** Prefer C — plate as brand; keep H1 for accessibility only.
+- **Status:** in-experiment
 
 ### Q-016 — Catalog status label treatment
 
@@ -51,7 +51,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-015 — Hero brand vs H1
+
+- **Question:** Q-015
+- **Branch:** brand-home-hero-h1
+- **PR:** (pending)
+- **Options:** A keep large H1 (control) / B shrink H1 / C plate-only (H1 visually hidden)
+- **Recommendation:** C — squircle plate already carries the brand; text H1 doubles it
+- **Status:** awaiting-you
 
 ### Template
 
