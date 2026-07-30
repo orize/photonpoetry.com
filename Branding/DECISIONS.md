@@ -29,14 +29,6 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-013 — Studio header weight
-
-- **Source:** agent
-- **Surface:** studio home / shared header
-- **Question:** Should the site header stay as a light blurred bar, go quieter (no blur / no bottom rule), or drop chrome entirely to a bare brand link?
-- **Suggestion:** Fork after atmosphere wash settles.
-- **Status:** queued
-
 ### Q-014 — Accent strength on “Make beautiful”
 
 - **Source:** agent
@@ -71,6 +63,17 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-013 — Studio header: blurred bar, flush inner
+
+- **Decision:** Site header keeps the light blurred bar and bottom rule (control); `.site-header__inner` is full-width with no auto margin (header padding alone insets).
+- **Why:** User pick A on E-013 / Q-013, plus strip margin from `site-header__inner`.
+- **Tried / rejected:** B quieter no blur/rule; C bare brand link; constrained/centered header inner sharing page margins.
+- **Surface:** studio home / shared header
+- **Date:** 2026-07-29
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/14
+- **Resolves:** Q-013
 
 ### P-012 — Page atmosphere: larger neutral stone wash
 
