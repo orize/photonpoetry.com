@@ -55,7 +55,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-015
 - **Branch:** brand-home-hero-h1
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/16
 - **Options:** A keep large H1 (control) / B shrink H1 / C plate-only (H1 visually hidden)
 - **Recommendation:** C — squircle plate already carries the brand; text H1 doubles it
 - **Status:** awaiting-you
