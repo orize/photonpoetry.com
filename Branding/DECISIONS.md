@@ -29,12 +29,20 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-014 — Accent strength on “Make beautiful”
+### Q-015 — Hero brand vs H1 redundancy
 
 - **Source:** agent
 - **Surface:** studio home
-- **Question:** Is the orange “Make beautiful” tagline the right accent weight, or should it go softer (muted) or stronger (brighter / slightly larger)?
-- **Suggestion:** Keep current until atmosphere and header settle; then fork.
+- **Question:** With the large logo plate already saying Photon Poetry, should the H1 wordmark stay, shrink, or drop so the plate carries the brand alone?
+- **Suggestion:** Fork after tagline accent settles.
+- **Status:** queued
+
+### Q-016 — Catalog status label treatment
+
+- **Source:** agent
+- **Surface:** studio home
+- **Question:** Should “In development” stay as a muted status line under each product name, move inline beside the name, or soften further (smaller / quieter)?
+- **Suggestion:** Fork after hero brand redundancy settles.
 - **Status:** queued
 
 ---
@@ -63,6 +71,17 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-014 — Tagline accent: keep current weight
+
+- **Decision:** Studio home “Make beautiful” keeps current accent color (`--accent`) and size (`clamp(2rem, 6.5vw, 2.85rem)`).
+- **Why:** User pick A on E-014 / Q-014 — current weight still reads right on the stone wash.
+- **Tried / rejected:** B softer/muted mix; C brighter (`--accent-bright`) + slightly larger.
+- **Surface:** studio home
+- **Date:** 2026-07-30
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/15
+- **Resolves:** Q-014
 
 ### P-013 — Studio header: blurred bar, flush inner
 
