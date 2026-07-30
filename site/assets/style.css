@@ -210,18 +210,6 @@ button:focus-visible {
   animation: rise 0.7s ease-out 0.08s both;
 }
 
-/* E-014 tagline accent — B: softer / muted */
-body.variant-b .studio-hero__tagline {
-  color: color-mix(in srgb, var(--accent) 68%, var(--text-muted));
-  font-size: clamp(1.85rem, 6vw, 2.55rem);
-}
-
-/* E-014 tagline accent — C: stronger / brighter + slightly larger */
-body.variant-c .studio-hero__tagline {
-  color: var(--accent-bright);
-  font-size: clamp(2.25rem, 7vw, 3.15rem);
-}
-
 .studio-hero__lede {
   margin: 1rem 0 0;
   max-width: 54rem;
