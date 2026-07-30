@@ -34,8 +34,8 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home
 - **Question:** Is the orange “Make beautiful” tagline the right accent weight, or should it go softer (muted) or stronger (brighter / slightly larger)?
-- **Suggestion:** Keep current until atmosphere and header settle; then fork.
-- **Status:** queued
+- **Suggestion:** Prefer current (A) after recent wash/header shifts; soft/strong forks are for comparison.
+- **Status:** in-experiment
 
 ---
 
@@ -43,7 +43,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-014 — Tagline accent weight
+
+- **Question:** Q-014
+- **Branch:** brand-home-tagline-accent
+- **PR:** (pending)
+- **Options:** A current accent (control) / B softer muted / C brighter + slightly larger
+- **Recommendation:** A — keep the established Make beautiful accent until something clearly fights the new stone wash
+- **Status:** awaiting-you
 
 ### Template
 
