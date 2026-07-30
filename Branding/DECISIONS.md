@@ -47,7 +47,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-014
 - **Branch:** brand-home-tagline-accent
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/15
 - **Options:** A current accent (control) / B softer muted / C brighter + slightly larger
 - **Recommendation:** A — keep the established Make beautiful accent until something clearly fights the new stone wash
 - **Status:** awaiting-you
