@@ -34,8 +34,8 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home
 - **Question:** Should “In development” stay as a muted status line under each product name, move inline beside the name, or soften further (smaller / quieter)?
-- **Suggestion:** Fork next — hero H1 kept large (P-015).
-- **Status:** queued
+- **Suggestion:** Prefer C — quieter muted status so accent stays on Make beautiful.
+- **Status:** in-experiment
 
 ---
 
@@ -43,7 +43,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-016 — Catalog status labels
+
+- **Question:** Q-016
+- **Branch:** brand-home-catalog-status
+- **PR:** (pending)
+- **Options:** A status under name (control) / B inline beside name / C softer quieter
+- **Recommendation:** C — less accent shout in the catalog; orange stays with the tagline
+- **Status:** awaiting-you
 
 ### Template
 
