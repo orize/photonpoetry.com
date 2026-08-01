@@ -29,20 +29,12 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-015 — Hero brand vs H1 redundancy
-
-- **Source:** agent
-- **Surface:** studio home
-- **Question:** With the large logo plate already saying Photon Poetry, should the H1 wordmark stay, shrink, or drop so the plate carries the brand alone?
-- **Suggestion:** Prefer C — plate as brand; keep H1 for accessibility only.
-- **Status:** in-experiment
-
 ### Q-016 — Catalog status label treatment
 
 - **Source:** agent
 - **Surface:** studio home
 - **Question:** Should “In development” stay as a muted status line under each product name, move inline beside the name, or soften further (smaller / quieter)?
-- **Suggestion:** Fork after hero brand redundancy settles.
+- **Suggestion:** Fork next — hero H1 kept large (P-015).
 - **Status:** queued
 
 ---
@@ -51,14 +43,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-015 — Hero brand vs H1
-
-- **Question:** Q-015
-- **Branch:** brand-home-hero-h1
-- **PR:** https://github.com/orize/photonpoetry.com/pull/16
-- **Options:** A keep large H1 (control) / B shrink H1 / C plate-only (H1 visually hidden)
-- **Recommendation:** C — squircle plate already carries the brand; text H1 doubles it
-- **Status:** awaiting-you
+_(None.)_
 
 ### Template
 
@@ -78,6 +63,17 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-015 — Hero keeps large H1 with logo plate
+
+- **Decision:** Studio home keeps the large “Photon Poetry” H1 beside the squircle logo plate (control).
+- **Why:** User pick A on E-015 / Q-015 — brand wordmark stays hero-level with the plate.
+- **Tried / rejected:** B shrink H1; C plate-only with visually hidden H1.
+- **Surface:** studio home
+- **Date:** 2026-08-01
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/16
+- **Resolves:** Q-015
 
 ### P-014 — Tagline accent: keep current weight
 
