@@ -47,7 +47,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-017
 - **Branch:** brand-home-lede-length
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/18
 - **Options:** A long craft paragraph (control) / B half (drop second sentence) / C single short line
 - **Recommendation:** B — keeps the craft belief; drops the delight/easy closer
 - **Status:** awaiting-you
