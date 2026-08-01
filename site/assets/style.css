@@ -246,12 +246,12 @@ button:focus-visible {
 
 .product-card__status {
   display: inline-block;
-  margin-top: 0.35rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  margin-top: 0.2rem;
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: color-mix(in srgb, var(--text-muted) 55%, var(--bg));
 }
 
 .product-card__blurb {
