@@ -246,33 +246,12 @@ button:focus-visible {
 
 .product-card__status {
   display: inline-block;
-  margin-top: 0.35rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  margin-top: 0.2rem;
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--accent);
-}
-
-/* E-016 catalog status — B: inline beside name */
-body.variant-b .product-card__head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.45rem 0.75rem;
-}
-
-body.variant-b .product-card__status {
-  margin-top: 0;
-}
-
-/* E-016 catalog status — C: softer / quieter */
-body.variant-c .product-card__status {
-  margin-top: 0.25rem;
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: var(--text-muted);
+  color: color-mix(in srgb, var(--text-muted) 55%, var(--bg));
 }
 
 .product-card__blurb {

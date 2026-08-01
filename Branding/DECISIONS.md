@@ -29,13 +29,13 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-016 — Catalog status label treatment
+### Q-017 — Studio lede length
 
 - **Source:** agent
 - **Surface:** studio home
-- **Question:** Should “In development” stay as a muted status line under each product name, move inline beside the name, or soften further (smaller / quieter)?
-- **Suggestion:** Prefer C — quieter muted status so accent stays on Make beautiful.
-- **Status:** in-experiment
+- **Question:** Should the home craft paragraph stay long, trim to about half, or go to a single short supporting line?
+- **Suggestion:** Fork after catalog status settles — content rule still prefers one short line.
+- **Status:** queued
 
 ---
 
@@ -43,14 +43,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-016 — Catalog status labels
-
-- **Question:** Q-016
-- **Branch:** brand-home-catalog-status
-- **PR:** https://github.com/orize/photonpoetry.com/pull/17
-- **Options:** A status under name (control) / B inline beside name / C softer quieter
-- **Recommendation:** C — less accent shout in the catalog; orange stays with the tagline
-- **Status:** awaiting-you
+_(None.)_
 
 ### Template
 
@@ -70,6 +63,17 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-016 — Catalog status: lighter than soft
+
+- **Decision:** Studio home “In development” stays under the product name, lighter than E-016 C — smaller (0.625rem), weight 400, and washed toward the page field via `color-mix` with `--bg` (not accent).
+- **Why:** User asked to go lighter than C on E-016 / Q-016.
+- **Tried / rejected:** A accent uppercase under name (control); B inline beside name; C muted smaller status.
+- **Surface:** studio home
+- **Date:** 2026-08-01
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/17
+- **Resolves:** Q-016
 
 ### P-015 — Hero keeps large H1 with logo plate
 
