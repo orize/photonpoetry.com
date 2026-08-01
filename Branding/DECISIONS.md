@@ -34,8 +34,8 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home
 - **Question:** Should the home craft paragraph stay long, trim to about half, or go to a single short supporting line?
-- **Suggestion:** Fork after catalog status settles — content rule still prefers one short line.
-- **Status:** queued
+- **Suggestion:** Prefer B (half) — keeps craft belief without the second sentence; content rule still leans shorter.
+- **Status:** in-experiment
 
 ---
 
@@ -43,7 +43,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-017 — Studio lede length
+
+- **Question:** Q-017
+- **Branch:** brand-home-lede-length
+- **PR:** (pending)
+- **Options:** A long craft paragraph (control) / B half (drop second sentence) / C single short line
+- **Recommendation:** B — keeps the craft belief; drops the delight/easy closer
+- **Status:** awaiting-you
 
 ### Template
 

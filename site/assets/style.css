@@ -218,6 +218,22 @@ button:focus-visible {
   animation: rise 0.7s ease-out 0.12s both;
 }
 
+/* E-017 lede length — A visible by default; B/C via ?v= */
+.studio-hero__lede--b,
+.studio-hero__lede--c {
+  display: none;
+}
+
+body.variant-b .studio-hero__lede--a,
+body.variant-c .studio-hero__lede--a {
+  display: none;
+}
+
+body.variant-b .studio-hero__lede--b,
+body.variant-c .studio-hero__lede--c {
+  display: block;
+}
+
 .product-catalog {
   margin: 2.75rem 0 0;
   padding: 0;

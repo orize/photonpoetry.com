@@ -42,12 +42,20 @@
           <h1>Photon Poetry</h1>
         </div>
         <p class="studio-hero__tagline">Make beautiful</p>
-        <p class="studio-hero__lede">
+        <p class="studio-hero__lede studio-hero__lede--a">
           We create well-considered software to help you make beautiful
           things, in the belief that light, motion and interaction deserve
           the same care as words on a page or notes in a piece of music. Our
           tools are designed to delight and make it easy for you to make
           beauty in your space.
+        </p>
+        <p class="studio-hero__lede studio-hero__lede--b">
+          We create well-considered software to help you make beautiful
+          things, in the belief that light, motion and interaction deserve
+          the same care as words on a page or notes in a piece of music.
+        </p>
+        <p class="studio-hero__lede studio-hero__lede--c">
+          Well-considered software to help you make beautiful things.
         </p>
       </section>
 
@@ -105,6 +113,13 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      /* E-017: ?v=b | ?v=c flips studio lede length without merging */
+      (function () {
+        var v = new URLSearchParams(location.search).get("v");
+        if (v === "b" || v === "c") {
+          document.body.classList.add("variant-" + v);
+        }
+      })();
     </script>
   </body>
 </html>
