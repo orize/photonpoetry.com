@@ -47,7 +47,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-016
 - **Branch:** brand-home-catalog-status
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/17
 - **Options:** A status under name (control) / B inline beside name / C softer quieter
 - **Recommendation:** C — less accent shout in the catalog; orange stays with the tagline
 - **Status:** awaiting-you
