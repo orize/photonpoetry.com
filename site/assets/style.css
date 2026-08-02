@@ -365,28 +365,9 @@ button:focus-visible {
 .site-footer {
   margin-top: auto;
   border-top: 1px solid var(--border);
-  background: var(--bg-elevated);
+  background: transparent;
   font-size: 0.875rem;
   color: var(--text-muted);
-}
-
-/* E-018 footer weight — B: quieter (less padding / softer type) */
-body.variant-b .site-footer {
-  border-top: none;
-  background: transparent;
-  padding-block: 0.65rem;
-  font-size: 0.8125rem;
-  color: color-mix(in srgb, var(--text-muted) 70%, var(--bg));
-}
-
-body.variant-b .site-footer a {
-  color: inherit;
-}
-
-/* E-018 footer weight — C: rule-only separation (no elevated fill) */
-body.variant-c .site-footer {
-  background: transparent;
-  border-top: 1px solid var(--border);
 }
 
 .site-footer__inner {

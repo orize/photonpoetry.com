@@ -29,13 +29,13 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-018 — Studio footer weight
+### Q-019 — Logo plate size on home
 
 - **Source:** agent
-- **Surface:** studio home / shared footer
-- **Question:** Should the footer stay as a quiet copyright + email row, go quieter (less padding / softer type), or use a thin top rule without the elevated fill?
-- **Suggestion:** Prefer B — quieter footer after the lighter catalog status.
-- **Status:** in-experiment
+- **Surface:** studio home
+- **Question:** Should the squircle logo plate stay at the current clamp size, go slightly smaller, or slightly larger in the first viewport?
+- **Suggestion:** Fork after footer weight settles.
+- **Status:** queued
 
 ---
 
@@ -43,14 +43,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-018 — Studio footer weight
-
-- **Question:** Q-018
-- **Branch:** brand-home-footer-weight
-- **PR:** https://github.com/orize/photonpoetry.com/pull/19
-- **Options:** A elevated bar + rule (control) / B quieter soft type / C rule-only no fill
-- **Recommendation:** B — less chrome under the open catalog
-- **Status:** awaiting-you
+_(None.)_
 
 ### Template
 
@@ -70,6 +63,17 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-018 — Footer: rule-only, no elevated fill
+
+- **Decision:** Site footer keeps the thin top rule and muted copyright/email row; background is transparent (no elevated fill bar).
+- **Why:** User pick C on E-018 / Q-018.
+- **Tried / rejected:** A elevated bar + rule (control); B quieter soft type with no rule.
+- **Surface:** studio home / shared footer
+- **Date:** 2026-08-02
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/19
+- **Resolves:** Q-018
 
 ### P-017 — Studio lede: light and delight couplet
 
