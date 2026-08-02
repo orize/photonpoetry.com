@@ -47,7 +47,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-019
 - **Branch:** brand-home-logo-size
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/20
 - **Options:** A current clamp (control) / B slightly smaller / C slightly larger
 - **Recommendation:** A — plate already carries brand weight with the large H1
 - **Status:** awaiting-you
