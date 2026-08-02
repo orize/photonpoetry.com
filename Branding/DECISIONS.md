@@ -47,7 +47,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-020
 - **Branch:** brand-home-hero-rhythm
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/21
 - **Options:** A current spacing (control) / B tighten ~25% / C open ~25%
 - **Recommendation:** B — couples the brand stack a bit after the shorter couplet lede
 - **Status:** awaiting-you
