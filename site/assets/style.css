@@ -218,34 +218,6 @@ button:focus-visible {
   animation: rise 0.7s ease-out 0.12s both;
 }
 
-/* E-020 hero rhythm — B: tighten (~25% less) */
-body.variant-b .studio-hero__brand {
-  gap: 0.94rem;
-  margin-bottom: 0.375rem;
-}
-
-body.variant-b .studio-hero__tagline {
-  margin-top: 0.56rem;
-}
-
-body.variant-b .studio-hero__lede {
-  margin-top: 0.75rem;
-}
-
-/* E-020 hero rhythm — C: open (~25% more) */
-body.variant-c .studio-hero__brand {
-  gap: 1.56rem;
-  margin-bottom: 0.625rem;
-}
-
-body.variant-c .studio-hero__tagline {
-  margin-top: 0.94rem;
-}
-
-body.variant-c .studio-hero__lede {
-  margin-top: 1.25rem;
-}
-
 .product-catalog {
   margin: 2.75rem 0 0;
   padding: 0;
