@@ -29,13 +29,13 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-017 — Studio lede length
+### Q-018 — Studio footer weight
 
 - **Source:** agent
-- **Surface:** studio home
-- **Question:** Should the home craft paragraph stay long, trim to about half, or go to a single short supporting line?
-- **Suggestion:** Prefer B (half) — keeps craft belief without the second sentence; content rule still leans shorter.
-- **Status:** in-experiment
+- **Surface:** studio home / shared footer
+- **Question:** Should the footer stay as a quiet copyright + email row, go quieter (less padding / softer type), or add a thin top rule for separation from the catalog?
+- **Suggestion:** Fork after the new lede settles in the first viewport.
+- **Status:** queued
 
 ---
 
@@ -43,14 +43,7 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-### E-017 — Studio lede length
-
-- **Question:** Q-017
-- **Branch:** brand-home-lede-length
-- **PR:** https://github.com/orize/photonpoetry.com/pull/18
-- **Options:** A long craft paragraph (control) / B half (drop second sentence) / C single short line
-- **Recommendation:** B — keeps the craft belief; drops the delight/easy closer
-- **Status:** awaiting-you
+_(None.)_
 
 ### Template
 
@@ -70,6 +63,18 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-017 — Studio lede: light and delight couplet
+
+- **Decision:** Studio home lede is “Well-considered software to help you make beautiful things. Light and delight, motion and emotion.”
+- **Why:** User-authored home lede (Q-017 / E-017).
+- **Tried / rejected:** A long craft paragraph (control); B half (drop second sentence); C single short line (“Well-considered software…” alone).
+- **Surface:** studio home
+- **Date:** 2026-08-02
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/18
+- **Resolves:** Q-017
+- **Supersedes:** Long craft paragraph portion of P-002
 
 ### P-016 — Catalog status: lighter than soft
 
