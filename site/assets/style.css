@@ -190,24 +190,6 @@ button:focus-visible {
   display: block;
 }
 
-/* E-019 logo size — B: slightly smaller */
-body.variant-b .studio-hero__logo {
-  width: clamp(4rem, 18vw, 6rem);
-}
-
-body.variant-b .studio-hero__logo-frame {
-  padding: 1rem 1.2rem;
-}
-
-/* E-019 logo size — C: slightly larger */
-body.variant-c .studio-hero__logo {
-  width: clamp(6rem, 26vw, 9rem);
-}
-
-body.variant-c .studio-hero__logo-frame {
-  padding: 1.4rem 1.7rem;
-}
-
 .studio-hero h1 {
   margin: 0;
   font-family: var(--font-display);
