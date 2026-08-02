@@ -1,0 +1,29 @@
+product_name = "PhoPo"
+skill_prefix = "phopo-ticket"
+github_repo = "orize/photonpoetry.com"
+staging_prefix = "phopo-ticket-batch"
+github_token_env = "PHOPO_GH_TOKEN"
+github_actor_env = "PHOPO_GH_ACTOR"
+github_repo_env = "PHOPO_GH_REPO"
+shortcut_name = "PhoPo ticket"
+icloud_fresh_default = ""
+
+[paths]
+assets = "Tickets/assets"
+plans = ".cursor/plans"
+state = ".cursor/ticket-state.json"
+thumbnails = ".cursor/screenshot-thumbnails"
+
+[areas]
+"area/site" = ["site", "page", "html", "css"]
+"area/brand" = ["brand", "logo", "branding", "affinity"]
+"area/luminous" = ["luminous"]
+"area/shimmer" = ["shimmer"]
+"area/bestunits" = ["best units", "best-units", "bestunits"]
+
+[plan_hints]
+"site,page,html" = ["site/"]
+"brand,logo,branding" = ["Branding/"]
+"luminous" = ["site/luminous/"]
+"shimmer" = ["site/shimmer/"]
+"best units,best-units" = ["site/best-units/"]
