@@ -34,8 +34,8 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home
 - **Question:** Should space between plate, H1, tagline, and lede stay as now, tighten (~25% less), or open (~25% more)?
-- **Suggestion:** Fork after logo size settles.
-- **Status:** queued
+- **Suggestion:** Prefer B — shorter lede may want a slightly tighter stack.
+- **Status:** in-experiment
 
 ---
 
@@ -43,7 +43,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-020 — Hero vertical rhythm
+
+- **Question:** Q-020
+- **Branch:** brand-home-hero-rhythm
+- **PR:** (pending)
+- **Options:** A current spacing (control) / B tighten ~25% / C open ~25%
+- **Recommendation:** B — couples the brand stack a bit after the shorter couplet lede
+- **Status:** awaiting-you
 
 ### Template
 

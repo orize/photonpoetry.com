@@ -102,6 +102,13 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      /* E-020: ?v=b | ?v=c flips hero vertical rhythm without merging */
+      (function () {
+        var v = new URLSearchParams(location.search).get("v");
+        if (v === "b" || v === "c") {
+          document.body.classList.add("variant-" + v);
+        }
+      })();
     </script>
   </body>
 </html>
