@@ -47,7 +47,7 @@ In-flight PR work. Status: `awaiting-you` | `applying`.
 
 - **Question:** Q-018
 - **Branch:** brand-home-footer-weight
-- **PR:** (pending)
+- **PR:** https://github.com/orize/photonpoetry.com/pull/19
 - **Options:** A elevated bar + rule (control) / B quieter soft type / C rule-only no fill
 - **Recommendation:** B — less chrome under the open catalog
 - **Status:** awaiting-you
