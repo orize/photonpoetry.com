@@ -29,12 +29,12 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-020 — Hero vertical rhythm
+### Q-021 — Catalog-to-hero separation
 
 - **Source:** agent
 - **Surface:** studio home
-- **Question:** Should space between plate, H1, tagline, and lede stay as now, tighten (~25% less), or open (~25% more)?
-- **Suggestion:** Fork after logo size settles.
+- **Question:** Should space above the product catalog stay as now, tighten, or open further from the hero?
+- **Suggestion:** Fork after hero rhythm settles.
 - **Status:** queued
 
 ---
@@ -63,6 +63,17 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-020 — Hero vertical rhythm: keep current
+
+- **Decision:** Studio home keeps current spacing between plate, H1, tagline, and lede (brand gap 1.25rem; tagline/lede margins unchanged).
+- **Why:** User pick A on E-020 / Q-020.
+- **Tried / rejected:** B tighten ~25%; C open ~25%.
+- **Surface:** studio home
+- **Date:** 2026-08-02
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/21
+- **Resolves:** Q-020
 
 ### P-019 — Logo plate: keep current size
 
