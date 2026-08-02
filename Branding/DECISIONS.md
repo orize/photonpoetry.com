@@ -34,8 +34,8 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 - **Source:** agent
 - **Surface:** studio home
 - **Question:** Should the squircle logo plate stay at the current clamp size, go slightly smaller, or slightly larger in the first viewport?
-- **Suggestion:** Fork after footer weight settles.
-- **Status:** queued
+- **Suggestion:** Prefer A — current size already reads as the brand hero beside the H1.
+- **Status:** in-experiment
 
 ---
 
@@ -43,7 +43,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-019 — Logo plate size
+
+- **Question:** Q-019
+- **Branch:** brand-home-logo-size
+- **PR:** (pending)
+- **Options:** A current clamp (control) / B slightly smaller / C slightly larger
+- **Recommendation:** A — plate already carries brand weight with the large H1
+- **Status:** awaiting-you
 
 ### Template
 
