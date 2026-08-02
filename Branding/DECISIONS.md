@@ -29,12 +29,12 @@ Source of truth for Photon Poetry and product brand growth. Not deployed (lives 
 
 Queued taste forks. List `Source: user` items first (newest first), then `Source: agent` items.
 
-### Q-019 — Logo plate size on home
+### Q-020 — Hero vertical rhythm
 
 - **Source:** agent
 - **Surface:** studio home
-- **Question:** Should the squircle logo plate stay at the current clamp size, go slightly smaller, or slightly larger in the first viewport?
-- **Suggestion:** Fork after footer weight settles.
+- **Question:** Should space between plate, H1, tagline, and lede stay as now, tighten (~25% less), or open (~25% more)?
+- **Suggestion:** Fork after logo size settles.
 - **Status:** queued
 
 ---
@@ -63,6 +63,17 @@ _(None.)_
 ## Provisional decisions
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
+
+### P-019 — Logo plate: keep current size
+
+- **Decision:** Studio home squircle logo stays at `clamp(5rem, 22vw, 7.5rem)` with current frame padding.
+- **Why:** User pick A on E-019 / Q-019.
+- **Tried / rejected:** B slightly smaller; C slightly larger.
+- **Surface:** studio home
+- **Date:** 2026-08-02
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/20
+- **Resolves:** Q-019
 
 ### P-018 — Footer: rule-only, no elevated fill
 
