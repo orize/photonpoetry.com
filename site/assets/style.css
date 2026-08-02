@@ -365,7 +365,7 @@ button:focus-visible {
 .site-footer {
   margin-top: auto;
   border-top: 1px solid var(--border);
-  background: var(--bg-elevated);
+  background: transparent;
   font-size: 0.875rem;
   color: var(--text-muted);
 }

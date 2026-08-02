@@ -11,3 +11,16 @@ site/assets/favicon-luminous-legacy.svg
 !.dev.vars.example
 .env*
 !.env.example
+
+# MCP secrets
+**/mcp.json
+!**/mcp.json.example
+
+# Ticket workflow runtime / secrets
+.cursor/ticket-bot.env
+.cursor/ticket-state.json
+.cursor/ticket-plan-*.json
+.cursor/ticket-plan-startup-only
+.cursor/tmp/
+.cursor/screenshot-thumbnails/
+!.cursor/screenshot-thumbnails/.gitkeep

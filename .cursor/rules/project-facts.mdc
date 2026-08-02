@@ -1,0 +1,20 @@
+---
+description: Permanent project constraints and stack lock — always true for this repo
+alwaysApply: true
+---
+
+# Project facts (always true)
+
+These facts are always true for this project. Apply them to every session without exception.
+If any task conflicts with one of these, flag it before proceeding.
+
+## Stack lock
+
+- Language / runtime:
+- Frameworks:
+- Package manager:
+- Deploy / hosting:
+
+## Permanent constraints
+
+- 
