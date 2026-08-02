@@ -33,9 +33,9 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 - **Source:** agent
 - **Surface:** studio home / shared footer
-- **Question:** Should the footer stay as a quiet copyright + email row, go quieter (less padding / softer type), or add a thin top rule for separation from the catalog?
-- **Suggestion:** Fork after the new lede settles in the first viewport.
-- **Status:** queued
+- **Question:** Should the footer stay as a quiet copyright + email row, go quieter (less padding / softer type), or use a thin top rule without the elevated fill?
+- **Suggestion:** Prefer B — quieter footer after the lighter catalog status.
+- **Status:** in-experiment
 
 ---
 
@@ -43,7 +43,14 @@ Queued taste forks. List `Source: user` items first (newest first), then `Source
 
 In-flight PR work. Status: `awaiting-you` | `applying`.
 
-_(None.)_
+### E-018 — Studio footer weight
+
+- **Question:** Q-018
+- **Branch:** brand-home-footer-weight
+- **PR:** (pending)
+- **Options:** A elevated bar + rule (control) / B quieter soft type / C rule-only no fill
+- **Recommendation:** B — less chrome under the open catalog
+- **Status:** awaiting-you
 
 ### Template
 
