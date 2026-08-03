@@ -64,6 +64,17 @@ _(None.)_
 
 Chosen but not frozen. Bump `iterations` when the choice is reaffirmed; at 2–3 ask to promote.
 
+### P-021 — Best Units home catalog blurb (four-line)
+
+- **Decision:** Studio home Best Units blurb is “Get the conversion you need. / One click. / Copy it? Replace it? / Another click.”; status remains In development.
+- **Why:** User-authored home catalog copy (working-tree edit applied).
+- **Tried / rejected:** “Get the conversion you need. One click. / Copy it or replace it? Another click.” (P-010).
+- **Surface:** studio home
+- **Date:** 2026-08-02
+- **Iterations:** 1
+- **PR:** https://github.com/orize/photonpoetry.com/pull/22
+- **Supersedes:** P-010
+
 ### P-020 — Hero vertical rhythm: keep current
 
 - **Decision:** Studio home keeps current spacing between plate, H1, tagline, and lede (brand gap 1.25rem; tagline/lede margins unchanged).
